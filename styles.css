@@ -10,21 +10,15 @@
     font-family: "Pricedown";
     src: url("Pricedown.otf");
 }
-
-.header{
-    text-align: center;
-    display: flex;
-    border-bottom: black 3px solid;
-    padding-bottom: 10px;
-    background-image: linear-gradient(90deg, #a0bccf 0%, #e7c4df 50%);
+main {
+    margin-top: 150px;
 }
-
 
 * {
     box-sizing: border-box;
     font-family: "Helvetica";
     position: relative;
-    font-size: 16px
+    font-size: 1rem
  }
 
 body::before {
@@ -48,7 +42,7 @@ h1 {
         padding-top: 20px;
         padding-bottom: 20px;
         font-style: italic;
-        font-size: 240%;
+        font-size: 2.4rem;
         text-shadow: -1px -1px 0 #8f0571;
         margin-top: -4px;
         border-bottom: 2px solid transparent;
@@ -56,7 +50,7 @@ h1 {
 }
 
 .block {
-    margin-top: 20px;
+    margin-top: calc(10px + 80px);
     width: 50%;
     margin-right: auto;
     margin-left: auto;
@@ -75,7 +69,7 @@ h1 {
 h2 {
     padding-bottom: 7px;
     text-align: left;
-    font-size: 190%;
+    font-size: 1.9rem;
     font-weight: bold;
     margin-bottom: 10px;
     color: #c240a6
@@ -89,7 +83,7 @@ p {
     margin-top: -5px;
 }
 .acotacion {
-    font-size: 15px;
+    font-size: 0.9375rem;
     color: rgb(240, 198, 231);
     font-style: italic;
     margin-left: 10px;
@@ -115,64 +109,73 @@ a:hover {
     margin-top: -20px;
     padding-bottom: 15px;
 }
-img {
+.imagen {
     box-sizing: content-box;
-    display: inline-block;
+    display: block;
     align-items: center;
     justify-content: center;
-    margin-top: 30px;
-    margin-bottom: 80px;
-    max-width: 100%;
+    margin: 30px auto 80px;
+    max-width: 50%;
     max-height: 100%;
-    height: 100%;
-}
-.imagen {
+    height: auto;
     border-width: 3px;
     border-color: #f1ec65;
     border-style: solid;
-    border-radius: 4px;
+    border-radius: 6px;
+    box-shadow: 2px 2px 50px rgba(123, 37, 131, 1);
+}
+.header {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    position: fixed;
+    padding: 10px 20px;
+    height: 70px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-image: linear-gradient(90deg, #a0bccf 0%, #e7c4df 50%);
+    border-bottom: 3px solid black;
+    z-index: 1000;
+    margin-bottom: 10px;
 }
 h4 {
-    font-size: 50px;
+    font-size: 2.5rem;
     font-family: Pricedown;
-    color: #272e15;
-    text-shadow: 2px 2px 0 #e7e7d6;
-    margin: auto;
+    color: #343b3a;
+    text-shadow: 3px 3px 0 #e7e7d6;
+    margin: 0;
+    grid-column: 2;
+    text-align: center;
+    padding-right: 100px;
 }
 .header-img {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: left;
-    align-items: left;
-    width: 10%;
-    height: 10%;
-    max-width: max-content;
-    max-height: max-content;
-    margin-left: 5px;
-    margin-right: 5px;
+    display: block;
+    max-width: 100px;
+    height: auto;
+    grid-column: 1;
+    z-index: 1001;
+    left: 40px;
+    margin-top: -8px;
 }
+
 .menu-btn {
-    display: flex;
-    justify-content: right;
-    align-items: right;
+    grid-column: 3;
+    justify-self: end;
     width: 10px;
     height: 10px;
     max-width: max-content;
     max-height: max-content;
-    margin: auto;
 }
 .navbar {
     color: white;
     display: flex;
-    justify-content: right;
-    align-items: right;
+    justify-content: flex-start;
+    align-items: center;
     position: fixed;
     top: 0;
-    left: 0;
     width: 95%;
     padding: 10px;
-    padding-top: 50px;
 }
 .hamburger {
     background: none;
@@ -180,12 +183,12 @@ h4 {
     cursor: pointer;
     display: flex;
     flex-direction: column;
-    gap: 5px;
-  }
-  .hamburger .line {
+    gap: 3px;
+}
+.hamburger .line {
     width: 25px;
     height: 3px;
     background-color: white;
-    border-radius: 2px;
+    border-radius: 3px;
     transition: all 0.3s;
-  }
+}
