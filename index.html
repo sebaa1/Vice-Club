@@ -8,21 +8,30 @@
         <title>TIMELINE - Vice Club</title>
     </head>
     <body>
+     <div class="container">
         <header class="header">
             <img src="header.png" alt="header" class="header-img">
             <h4>VICE CLUB</h4>
+            <nav class="navbar">
+                <button class="hamburger" aria-label="Abrir menú">
+                  <span class="line"></span>
+                  <span class="line"></span>
+                  <span class="line"></span>
+                </button>
         </header>
-            <div class="block">
-                <div class="last-updated" id="lastUpdated"></div>
-                <h1>Línea de tiempo de Grand Theft Auto: VI</h1>
+     </div>
+     <main>
+        <div class="block">
+            <div class="last-updated" id="lastUpdated"></div>
+            <h1>Línea de tiempo de Grand Theft Auto: VI</h1>
                 <h2>12/12/2024</h2>
                     <h3 class="acotacion">22:59hs</h3>
                         <p>Grand Theft Auto: VI gana el premio al juego más esperado del año en los Game Awards 2024</p>
                     <h3 class="acotacion">17:19hs</h3>
-                            <p>El CEO de Take-Two Interactive, Strauss Zelnick en una entrevista con Conner Mather menciona que el juego sigue programado para otoño de 2025, pero sin dar una fecha específica, y que será "extraordinario y valdrá la pena la espera"</p>
+                        <p>El CEO de Take-Two Interactive, Strauss Zelnick en una entrevista con Conner Mather menciona que el juego sigue programado para otoño de 2025, pero sin dar una fecha específica, y que será "extraordinario y valdrá la pena la espera"</p>
                 <h2>21/11/2024</h2>
                     <h3 class="acotacion">15:07hs</h3>
-                            <p>Grand Theft Auto: VI gana el premio "Most Wanted" al juego más esperado del año en los Golden Joystick Awards</p>
+                        <p>Grand Theft Auto: VI gana el premio "Most Wanted" al juego más esperado del año en los Golden Joystick Awards</p>
                 <h2>05/12/2023</h2>
                     <h3 class="acotacion">20:10hs</h3>
                         <p>El tráiler del juego llega a las 90.6 millones de visitas en 24 horas, rompiendo el récord como el video no musical más visto en ese tiempo en la historia de YouTube</p>
@@ -63,25 +72,20 @@
                         <p>El periodista de videojuegos Tom Henderson sube un <a href="https://www.youtube.com/watch?v=b5kSp88_a2Y" target="_blank">video</a> a su canal de YouTube donde habla de información que recopiló sobre Grand Theft Auto: VI en los últimos años</p>
                         <br>
                         <p>Menciona que el juego se ambientaría en la actualidad, que habría una protagonista femenina centrada en la tecnología y el hackeo, que el mapa cambiaría y evolucionaría en el futuro con la integración de DLCs, y que se implementaría un sistema de criptomonedas como recompensa jugable</p>
-
-                   
             </div>
-
             <script>
-    const lastModified = new Date(document.lastModified);
-    const options = { 
-        year: 'numeric', 
-        month: 'long', 
-        day: 'numeric', 
-        hour: '2-digit', 
-        minute: '2-digit', 
-        hourCycle: 'h23'
-    };
-
-   const formattedDate = lastModified.toLocaleDateString('es-AR', options);
-    const updatedText = formattedDate.replace(/(\d{2}:\d{2})/, '$1hs');
-
-    document.getElementById('lastUpdated').innerText = `Última actualización: ${updatedText}`;
-</script>
-
+                const lastModified = new Date(document.lastModified);
+                const options = { 
+                year: 'numeric', 
+                month: 'long', 
+                day: 'numeric', 
+                hour: '2-digit', 
+                minute: '2-digit', 
+                hourCycle: 'h23'
+                };
+                const formattedDate = lastModified.toLocaleDateString('es-AR', options);
+                const updatedText = formattedDate.replace(/(\d{2}:\d{2})/, '$1hs');
+                document.getElementById('lastUpdated').innerText = `Última actualización: ${updatedText}`;
+            </script>
+    </main>
 </html>

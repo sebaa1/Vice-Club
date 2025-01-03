@@ -11,12 +11,12 @@
     src: url("Pricedown.otf");
 }
 
-.header {
+.header{
     text-align: center;
-    background-color: rgb(160, 188, 207);
     display: flex;
     border-bottom: black 3px solid;
     padding-bottom: 10px;
+    background-image: linear-gradient(90deg, #a0bccf 0%, #e7c4df 50%);
 }
 
 
@@ -62,12 +62,14 @@ h1 {
     margin-left: auto;
     background-color: rgba(55, 28, 51, 0.8);
     padding: 1.5rem;
-    border-radius: 5px;
-    border-style: solid;
-    border-image: linear-gradient(360deg,#3f5ece 0%, #e340b9 25%,#fe8176 50%,#fe8176 80%, #fdbd51 100%);
-    border-image-slice: 1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     min-height: 100vh;
     min-width: 50vh;
+    border-image: linear-gradient(45deg,#3f5ece 0%, #e340b9 25%,#fe8176 50%,#fe8176 80%, #fdbd51 100%);
+    border-radius: 10px;
+    border-width: 8px;
+    border-style: solid;
+    border-image-slice: 1;
     }
 
 h2 {
@@ -150,3 +152,40 @@ h4 {
     margin-left: 5px;
     margin-right: 5px;
 }
+.menu-btn {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    width: 10px;
+    height: 10px;
+    max-width: max-content;
+    max-height: max-content;
+    margin: auto;
+}
+.navbar {
+    color: white;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 95%;
+    padding: 10px;
+    padding-top: 50px;
+}
+.hamburger {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .hamburger .line {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    border-radius: 2px;
+    transition: all 0.3s;
+  }
