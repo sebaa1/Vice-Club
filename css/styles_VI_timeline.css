@@ -150,12 +150,13 @@ h4 {
 }
 .header-img {
     display: block;
-    max-width: 100px;
+    max-width: 80px;
     height: auto;
     grid-column: 1;
     z-index: 1001;
     left: 40px;
-    top: -20px;
+    top: -22px;
+    filter: drop-shadow(0px 0px 10px #44ffc4);
 }
 
 .navbar {
