@@ -17,6 +17,12 @@
 main {
     margin-top: 150px;
 }
+* {
+    box-sizing: border-box;
+    font-family: "Helvetica";
+    position: relative;
+    font-size: 1rem
+ }
 body::before {
     content: "";
     position: fixed;
@@ -69,12 +75,12 @@ h4 {
 }
 .header-img {
     display: block;
-    max-width: 100px;
+    max-width: 80px;
     height: auto;
     grid-column: 1;
-    z-index: 1001;
+    z-index: 0;
     left: 40px;
-    top: -20px;
+    top: -22px;
 }
 
 .navbar {

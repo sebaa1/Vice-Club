@@ -183,3 +183,14 @@ h4 {
 .header-container:hover .dropdown-content {
     display: block;
 }
+.anchor, .anchor:visited {
+    font-size: 2.5rem;
+    font-family: "Guanine";
+    color: #e0e0e0;
+    text-shadow: 3px 3px 0 #10100d;
+    margin: 0;
+    grid-column: 2;
+    text-align: center;
+    padding-bottom: 40px;
+    text-decoration: none;
+}
