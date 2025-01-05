@@ -1,26 +1,22 @@
 @font-face {
     font-family: "Helvetica";
-    src: url(/fuentes/Helvetica.otf);
+    src: url("../fonts/Helvetica.otf");
 }
 @font-face {
     font-family: "Chalet";
-    src: url(/fuentes/Chalet.otf);
+    src: url("../fonts/Chalet.otf");
 }
 @font-face {
     font-family: "Guanine";
-    src: url(/fuentes/Guanine.otf);
+    src: url("../fonts/Guanine.otf");
+}
+@font-face {
+    font-family: "Arborcrest";
+    src: url("../fonts/SF\ Arborcrest.ttf");
 }
 main {
     margin-top: 150px;
 }
-
-* {
-    box-sizing: border-box;
-    font-family: "Helvetica";
-    position: relative;
-    font-size: 1rem;
-}
-
 body::before {
     content: "";
     position: fixed;
@@ -28,101 +24,24 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(/imagenes/fondo.jpg);
+    background-image: url(../images/fondo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    filter: blur(3px);
+    filter: blur(1px);
     z-index: -1;
 }
-
 h1 {
-        text-align: center;
-        color: #e7c4df;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        font-style: italic;
-        font-size: 2.4rem;
-        text-shadow: -1px -1px 0 #8f0571;
-        margin-top: -4px;
-        border-bottom: 2px solid transparent;
-        border-image-slice: 1;
-}
-
-.block {
-    margin-top: calc(10px + 50px);
-    width: 50%;
-    margin-right: auto;
-    margin-left: auto;
-    background-color: rgba(55, 28, 51, 0.8);
-    padding: 1.5rem;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    min-height: 100vh;
-    min-width: 50vh;
-    border-image: linear-gradient(45deg,#3f5ece 0%, #e340b9 25%,#fe8176 50%,#fe8176 80%, #fdbd51 100%);
-    border-radius: 10px;
-    border-width: 8px;
-    border-style: solid;
-    border-image-slice: 1;
-    }
-
-h2 {
-    padding-bottom: 7px;
-    text-align: left;
-    font-size: 1.9rem;
-    font-weight: bold;
-    margin-bottom: 10px;
-    color: #c240a6
-
-}
-p {
-    font-family: Chalet;
-    margin-bottom: 20px;
-    color: white;
-    margin-left: 25px;
-    margin-top: -5px;
-}
-.acotacion {
-    font-size: 0.9375rem;
-    color: rgb(240, 198, 231);
-    font-style: italic;
-    margin-left: 10px;
-}
-a:link {
-    color: #d852bb;
-    text-decoration: none;
-
-}
-a:visited {
-    color: rgb(222, 171, 216);
-    text-decoration: none;
-}
-a:hover {
-    color: rgb(228, 171, 216);
-    text-decoration: underline;
-}
-
-.last-updated {
-    font-size: 15px;
-    color: #a8edde;
     text-align: center;
-    margin-top: -20px;
-    padding-bottom: 15px;
-}
-.imagen {
-    box-sizing: content-box;
-    display: block;
-    align-items: center;
-    justify-content: center;
-    margin: 30px auto 80px;
-    max-width: 50%;
-    max-height: 100%;
-    height: auto;
-    border-width: 3px;
-    border-color: #f1ec65;
-    border-style: solid;
-    border-radius: 6px;
-    box-shadow: 2px 2px 50px rgba(123, 37, 131, 1);
+    color: #e7c4df;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-style: italic;
+    font-size: 2.4rem;
+    text-shadow: -1px -1px 0 #8f0571;
+    margin-top: -4px;
+    border-bottom: 2px solid transparent;
+    border-image-slice: 1;
 }
 .header {
     display: grid;
@@ -134,13 +53,13 @@ a:hover {
     top: 0;
     left: 0;
     width: 100%;
-    background-image: linear-gradient(90deg, #a0bccf 0%, #e7c4df 50%);
+    background-image: linear-gradient(45deg, #dc6ec4, #8749b4);
     border-bottom: 3px solid black;
     z-index: 1;
 }
 h4 {
     font-size: 2.5rem;
-    font-family: Guanine;
+    font-family: "Guanine";
     color: #343b3a;
     text-shadow: 3px 3px 0 #e7e7d6;
     margin: 0;
@@ -150,13 +69,12 @@ h4 {
 }
 .header-img {
     display: block;
-    max-width: 80px;
+    max-width: 100px;
     height: auto;
     grid-column: 1;
     z-index: 1001;
     left: 40px;
-    top: -22px;
-    filter: drop-shadow(0px 0px 10px #44ffc4);
+    top: -20px;
 }
 
 .navbar {
@@ -168,6 +86,7 @@ h4 {
     bottom: 20px;
     width: 95%;
     padding: 1rem;
+
 }
 .hamburger {
     background: none;
@@ -208,6 +127,7 @@ h4 {
 .menu-content a {
     text-decoration: none;
     color: #ffffff;
+    font-family: "Arborcrest";
 }
 .menu-content a.active {
     color: rgb(241, 112, 226);

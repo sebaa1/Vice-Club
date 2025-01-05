@@ -1,18 +1,18 @@
 @font-face {
     font-family: "Helvetica";
-    src: url("/fuentes/Helvetica.otf");
+    src: url("../fonts/Helvetica.otf");
 }
 @font-face {
     font-family: "Chalet";
-    src: url("/fuentes/Chalet.otf");
+    src: url("../fonts/Chalet.otf");
 }
 @font-face {
     font-family: "Guanine";
-    src: url("/fuentes/Guanine.otf");
+    src: url("../fonts/Guanine.otf");
 }
 @font-face {
-    font-family: "Eurostyle";
-    src: url("/fuentes/Eurostile Bold.ttf");
+    font-family: "Helvetica Neue Heavy";
+    src: url("../fonts/HelveticaNeueHeavy.otf");
 }
 main {
     margin-top: 150px;
@@ -32,7 +32,7 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(/imagenes/fondo_lcs.png);
+    background-image: url(../images/fondo_iv.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -61,7 +61,7 @@ h1 {
     top: 0;
     left: 0;
     width: 100%;
-    background-image: linear-gradient(180deg, #851d1d, #162434);
+    background-image: linear-gradient(270deg, #1f221f, #8c8585);
     border-bottom: 3px solid black;
     z-index: 1;
 }
@@ -83,7 +83,7 @@ h4 {
     z-index: 1001;
     left: 40px;
     top: -22px;
-    filter: drop-shadow(0px 0px 10px #edb6b6);
+    filter: drop-shadow(0px 0px 10px #decbb9);
 }
 .navbar {
     color: white;
@@ -135,10 +135,10 @@ h4 {
 .menu-content a {
     text-decoration: none;
     color: #ffffff;
-    font-family: "Eurostyle";
+    font-family: "Helvetica Neue Heavy";
 }
 .menu-content a.active {
-    color: #af161b;
+    color: rgb(141, 141, 141);
 }
 .header-container {
     position: relative;
