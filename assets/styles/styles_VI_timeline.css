@@ -154,7 +154,7 @@ h4 {
     height: auto;
     grid-column: 1;
     z-index: 1001;
-    left: 40px;
+    left: 0px;
     top: -22px;
     filter: drop-shadow(0px 0px 10px #44ffc4);
 }
@@ -217,9 +217,7 @@ h4 {
     display: inline-block;
     z-index: 1000;
 }
-@media (max-width: 768px) {
-
-    .dropdown-content {
+.dropdown-content {
     display: none;
     position: fixed;
     top: 69px;
@@ -233,29 +231,29 @@ h4 {
     gap: 10px;
     transition: opacity 0.3s ease;
     }
-    .dropdown-content .logo {
+.dropdown-content .logo {
     filter: grayscale(100%);
     transition: filter 0.3s ease;
     }
-    .dropdown-content .logo-active {
+.dropdown-content .logo-active {
     filter: grayscale(0%);
     }
-    .dropdown-content img {
+.dropdown-content img {
    height: 100px;
    width: auto;
    transition: transform 0.2s ease;
    transform: scale(0.6);
     }
-    .dropdown-content img:hover {
+.dropdown-content img:hover {
     transform: scale(0.8);
     }
-    .dropdown-content a {
+.dropdown-content a {
     color: transparent
     }
-    .header-container:hover .dropdown-content {
+.header-container:hover .dropdown-content {
     display: block;
     }
-}
+
 .anchor, .anchor:visited, .anchor:hover {
     font-size: 2.5rem;
     font-family: "Guanine";
