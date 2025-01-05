@@ -141,8 +141,8 @@ a:hover {
 h4 {
     font-size: 2.5rem;
     font-family: Guanine;
-    color: #343b3a;
-    text-shadow: 3px 3px 0 #e7e7d6;
+    color: #800080;
+    text-shadow: 3px 3px 0 #17171675;
     margin: 0;
     grid-column: 2;
     text-align: center;
@@ -210,7 +210,7 @@ h4 {
     color: #ffffff;
 }
 .menu-content a.active {
-    color: rgb(241, 112, 226);
+    color: #800080;
 }
 .header-container {
     position: relative;

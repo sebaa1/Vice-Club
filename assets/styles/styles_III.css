@@ -68,8 +68,8 @@ h1 {
 h4 {
     font-size: 2.5rem;
     font-family: "Guanine";
-    color: #343b3a;
-    text-shadow: 3px 3px 0 #e7e7d6;
+    color: #e8a701;
+    text-shadow: 3px 3px 0 #040401;
     margin: 0;
     grid-column: 2;
     text-align: center;
@@ -80,7 +80,7 @@ h4 {
     max-width: 80px;
     height: auto;
     grid-column: 1;
-    z-index: 1001;
+    z-index: 0;
     left: 40px;
     top: -22px;
     filter: drop-shadow(0px 0px 10px #edff23);
@@ -139,7 +139,7 @@ h4 {
     font-family: "Arial Black Italic";
 }
 .menu-content a.active {
-    color: #f7b200;
+    color: #e8a701;
 }
 .header-container {
     position: relative;

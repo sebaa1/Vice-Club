@@ -61,15 +61,15 @@ h1 {
     top: 0;
     left: 0;
     width: 100%;
-    background-image: linear-gradient(270deg, #1f221f, #8c8585);
+    background-image: linear-gradient(270deg, #9fa5a6, #1b1616);
     border-bottom: 3px solid black;
     z-index: 1;
 }
 h4 {
     font-size: 2.5rem;
     font-family: "Guanine";
-    color: #343b3a;
-    text-shadow: 3px 3px 0 #e7e7d6;
+    color: #6c6c6c;
+    text-shadow: 3px 3px 0 #000000;
     margin: 0;
     grid-column: 2;
     text-align: center;
@@ -138,7 +138,7 @@ h4 {
     font-family: "Helvetica Neue Heavy";
 }
 .menu-content a.active {
-    color: rgb(141, 141, 141);
+    color: #6c6c6c;
 }
 .header-container {
     position: relative;
