@@ -13,14 +13,12 @@
 main {
     margin-top: 150px;
 }
-
 * {
     box-sizing: border-box;
     font-family: "Helvetica";
     position: relative;
     font-size: 1rem
- }
-
+}
 body::before {
     content: "";
     position: fixed;
@@ -49,14 +47,13 @@ h1 {
 }
 h4 {
     font-size: 2.5rem;
-    font-family: Guanine;
+    font-family: "Guanine";
     color: #800080;
     text-shadow: 3px 3px 0 #17171675;
     margin: 0;
     text-align: center;
     white-space: nowrap;
 }
-
 .header {
     display: flex;
     justify-content: space-between;
@@ -89,12 +86,10 @@ h4 {
     text-align: center;
 }
 .navbar {
-    color: white;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     position: relative;
-
 }
 .hamburger {
     background: none;
@@ -140,8 +135,6 @@ h4 {
 .menu-content a.active {
     color:#800080;
 }
-
-
 .dropdown-content {
     display: none;
     position: fixed;
@@ -164,10 +157,10 @@ h4 {
     filter: grayscale(0%);
 }
 .dropdown-content img {
-   height: 100px;
-   width: auto;
-   transition: transform 0.2s ease;
-   transform: scale(0.6);
+    height: 100px;
+    width: auto;
+    transition: transform 0.2s ease;
+    transform: scale(0.6);
 }
 .dropdown-content img:hover {
     transform: scale(0.8);
