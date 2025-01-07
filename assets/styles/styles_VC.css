@@ -179,3 +179,9 @@ h4 {
     padding-bottom: 40px;
     text-decoration: none;
 }
+.trucos {
+    display: none;
+}
+.trucos.active {
+    display: block;
+}
