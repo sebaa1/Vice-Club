@@ -37,6 +37,9 @@ body::before {
     filter: blur(3px);
     z-index: -1;
 }
+body {
+    color: white;
+}
 h1 {
     text-align: center;
     color: #e7c4df;
@@ -178,4 +181,10 @@ h4 {
     text-align: center;
     padding-bottom: 40px;
     text-decoration: none;
+}
+.trucos {
+    display: none;
+}
+.trucos.active {
+    display: block;
 }

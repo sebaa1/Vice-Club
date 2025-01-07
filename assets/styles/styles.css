@@ -14,6 +14,10 @@
     font-family: "Arborcrest";
     src: url("../fonts/SF\ Arborcrest.ttf");
 }
+body {
+    font-family: Tahoma;
+    margin-top: 110px
+}
 body::before {
     content: "";
     position: fixed;
@@ -122,4 +126,34 @@ h4 {
 }
 .header-container:hover .dropdown-content {
     display: block;
+}
+.juego {
+    width: 30px
+}
+.logo {
+    width: 21px;
+}
+table {
+    align-items: center;
+    width: 60%;
+    border-collapse: collapse;
+    margin: 20px auto 0 auto;
+}
+th, td {
+    border: 1px solid #fff4f4;
+    padding: 10px;
+    text-align: center;
+}
+th {
+    background-color: #b75ebd;
+    font-weight: bold;
+}
+td {
+    background-color: #ffffff72;
+}
+.leyenda {
+    font-style: italic;
+    margin-inline-start: 60px;
+    text-align: center;
+    color: #4f4545
 }

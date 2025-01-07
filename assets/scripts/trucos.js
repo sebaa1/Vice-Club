@@ -1,19 +1,18 @@
-const selectPlataforma = document.getElementById('plataforma');
-        const trucos = document.querySelectorAll('.trucos');
+document.getElementById('plataforma').addEventListener('change', function () {
 
-        // Mostrar los trucos de la plataforma seleccionada
-        const mostrarTrucos = () => {
-            trucos.forEach(truco => {
-                truco.classList.remove('active');
-            });
-            const seleccion = selectPlataforma.value;
-            if (seleccion) {
-                document.getElementById(seleccion).classList.add('active');
-            }
-        };
+    const secciones = document.querySelectorAll('.trucos');
+  
+    secciones.forEach(seccion => {
+      seccion.classList.remove('active');
+    });
+  
 
-        // Evento al cambiar la selección
-        selectPlataforma.addEventListener('change', mostrarTrucos);
+    const plataformaSeleccionada = this.value;
+  
 
-        // Mostrar trucos predeterminados al cargar la página
-        window.addEventListener('DOMContentLoaded', mostrarTrucos);
+    const trucoActivo = document.getElementById(plataformaSeleccionada);
+    if (trucoActivo) {
+      trucoActivo.classList.add('active');
+    }
+  });
+  
