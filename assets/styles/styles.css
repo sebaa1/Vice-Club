@@ -29,7 +29,7 @@ body::before {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    filter: blur(3px);
+    filter: blur(6px);
     z-index: -1;
 }
 h1 {
@@ -44,6 +44,15 @@ h1 {
     border-bottom: 2px solid transparent;
     border-image-slice: 1;
 }
+h2 {
+    font-size: 2.2rem;
+    margin-bottom: -10px
+}
+h3 {
+    font-size: 1.6rem;
+    border-bottom: 3px solid;
+    border-image: linear-gradient(90deg, #dc6ec4, #8749b4) 1;
+}
 h4 {
     font-size: 2.5rem;
     font-family: "Guanine";
@@ -52,6 +61,13 @@ h4 {
     margin: 0;
     text-align: center;
     white-space: nowrap;
+}
+h5 {
+    font-size: 1.2rem;
+}
+h5, p {
+    margin-left: 40px;
+    margin-bottom: 10px
 }
 .navbar {
     color: white;
