@@ -29,7 +29,7 @@ body::before {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    filter: blur(1px);
+    filter: blur(3px);
     z-index: -1;
 }
 h1 {
