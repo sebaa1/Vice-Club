@@ -14,9 +14,6 @@
     font-family: "Arial Black Italic";
     src: url("../fonts/Arial\ Black\ Italic.ttf");
 }
-main {
-    margin-top: 150px;
-}
 * {
     box-sizing: border-box;
     font-family: "Helvetica";
@@ -39,18 +36,16 @@ body::before {
 }
 body {
     color: white;
+    margin-top: 80px;
 }
 h1 {
+    font-size: 3rem;
+    font-family: "Chalet";
+    color: #e8a701;
+    text-shadow: 3px 3px 0 #040401;
+    margin: 0;
     text-align: center;
-    color: #e7c4df;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    font-style: italic;
-    font-size: 2.4rem;
-    text-shadow: -1px -1px 0 #8f0571;
-    margin-top: -4px;
-    border-bottom: 2px solid transparent;
-    border-image-slice: 1;
+    white-space: nowrap;
 }
 h4 {
     font-size: 2.5rem;
@@ -187,4 +182,49 @@ h4 {
 }
 .trucos.active {
     display: block;
+}
+.ficha-tecnica {
+    margin: 20px auto;
+    max-width: 600px;
+    border: 3px solid #000000;
+    border-radius: 8px;
+    background-color: #9ebcf8;
+    padding: 15px;
+    font-family: "Arial Black Italic";
+    height: 30%;
+    width: 30%;
+}
+.ficha-tecnica h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+}
+.ficha-tecnica table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.ficha-tecnica th, .ficha-tecnica td {
+    text-align: left;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+.ficha-tecnica th {
+    width: 35%;
+    background-color: #c2c1e3;
+    font-weight: bold;
+    color: #555;
+}
+.ficha-tecnica td {
+    color: #333;
+}
+.ficha-tecnica tr:last-child td {
+    border-bottom: none;
+}
+.ficha-tecnica .portada img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
 }
