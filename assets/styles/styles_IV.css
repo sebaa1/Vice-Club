@@ -56,7 +56,7 @@ h1 {
 h4 {
     font-size: 2.5rem;
     font-family: "Guanine";
-    color: #6c6c6c;
+    color: #b2b2b2;
     text-shadow: 3px 3px 0 #000000;
     margin: 0;
     text-align: center;
@@ -176,7 +176,7 @@ h4 {
 .anchor, .anchor:visited {
     font-size: 2.5rem;
     font-family: "Guanine";
-    color: #6c6c6c;
+    color: #b2b2b2;
     text-shadow: 3px 3px 0 #000000;
     margin: 0;
     grid-column: 2;
@@ -186,10 +186,11 @@ h4 {
 }
 .ficha-tecnica {
     margin: 20px auto;
-    max-width: 600px;
+    max-width: 450px;
+    margin-right: 0;
     border: 3px solid #000000;
     border-radius: 8px;
-    background-color: #84767f;
+    background-color: #837d80;
     padding: 15px;
     font-family: "Arial Black Italic";
     height: 30%;
@@ -197,7 +198,7 @@ h4 {
 }
 .ficha-tecnica h2 {
     text-align: center;
-    font-size: 24px;
+    font-size: 1.5rem;
     color: #333;
 }
 .ficha-tecnica table {
@@ -211,21 +212,44 @@ h4 {
 }
 .ficha-tecnica th {
     width: 35%;
-    background-color: #c3b2c3;
+    background-color: #110f11;
     font-weight: bold;
-    color: #555;
+    color: #ffffff;
 }
 .ficha-tecnica td {
     color: #333;
 }
-.ficha-tecnica tr:last-child td {
-    border-bottom: none;
-}
 .ficha-tecnica .portada img {
-    max-width: 100%;
-    width: auto;
-    height: auto;
+    max-width: 80%;
+    max-height: 80%;
+    width: 290px;
+    height: 350px;
     border-radius: 8px;
     display: block;
     margin: 0 auto;
+}
+li {
+    list-style-type: none;
+}
+ul {
+    padding: 0;
+    margin-bottom: 30px;
+}
+.tabla {
+    padding: 0;
+    margin-bottom: 10px;
+}
+span {
+    font-size: 0.4rem;
+    font-family: "Helvetica Neue Heavy";
+    color: #e8a701;
+    text-shadow: 1px 1px 0 #040401;
+    align-items: left;
+    white-space: nowrap;
+}
+.container {
+    background-color: #84738476;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 10px;
 }
