@@ -34,8 +34,11 @@ body::before {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    filter: blur(3px);
+    filter: blur(12px);
     z-index: -1;
+}
+body {
+    margin-top: 80px;
 }
 h1 {
     text-align: center;
@@ -73,7 +76,7 @@ h4 {
     width: 100%;
     top: 0;
     left: 0;
-    background-image: linear-gradient(210deg, #a53036, #ffffff);
+    background-image: linear-gradient(360deg,#a53036, #cca0a0);
     border-bottom: 3px solid black;
     z-index: 1;
 }
@@ -178,4 +181,55 @@ h4 {
     text-align: center;
     padding-bottom: 40px;
     text-decoration: none;
+}
+.trucos {
+    display: none;
+}
+.trucos.active {
+    display: block;
+}
+.ficha-tecnica {
+    margin: 20px auto;
+    max-width: 600px;
+    border: 3px solid #000000;
+    border-radius: 8px;
+    background-color: #f89e9e;
+    padding: 15px;
+    font-family: "Arial Black Italic";
+    height: 30%;
+    width: 30%;
+}
+.ficha-tecnica h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+}
+.ficha-tecnica table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.ficha-tecnica th, .ficha-tecnica td {
+    text-align: left;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+.ficha-tecnica th {
+    width: 35%;
+    background-color: #e3c1c1;
+    font-weight: bold;
+    color: #555;
+}
+.ficha-tecnica td {
+    color: #333;
+}
+.ficha-tecnica tr:last-child td {
+    border-bottom: none;
+}
+.ficha-tecnica .portada img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    border-radius: 9px;
+    display: block;
+    margin: 0 auto;
 }

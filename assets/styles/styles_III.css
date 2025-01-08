@@ -188,7 +188,7 @@ h4 {
     max-width: 600px;
     border: 3px solid #000000;
     border-radius: 8px;
-    background-color: #9ebcf8;
+    background-color: #294783;
     padding: 15px;
     font-family: "Arial Black Italic";
     height: 30%;
@@ -197,7 +197,7 @@ h4 {
 .ficha-tecnica h2 {
     text-align: center;
     font-size: 24px;
-    color: #333;
+    color: #ffffff;
 }
 .ficha-tecnica table {
     width: 100%;
@@ -210,12 +210,12 @@ h4 {
 }
 .ficha-tecnica th {
     width: 35%;
-    background-color: #c2c1e3;
+    background-color: #484685;
     font-weight: bold;
-    color: #555;
+    color: #b0b0b0;
 }
 .ficha-tecnica td {
-    color: #333;
+    color: #ffffff;
 }
 .ficha-tecnica tr:last-child td {
     border-bottom: none;
