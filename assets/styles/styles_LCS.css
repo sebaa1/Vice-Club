@@ -249,8 +249,7 @@ abbr:hover {
 }
 .container {
     background-color: #b7424276;
-    margin-left: 30px;
-    margin-right: 30px;
+    margin: 75px 120px;
     border-radius: 10px;
 }
 .titulo {

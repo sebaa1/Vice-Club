@@ -183,6 +183,20 @@ h4 {
 }
 .trucos.active {
     display: block;
+    margin-left: 40px;
+}
+.menu {
+    margin-left: 20px
+}
+.trucos h2, .trucos-active h2 {
+font-weight: bold;
+font-size: 1.1rem;
+color: #50173a;
+text-decoration: underline;
+}
+.trucos h3, .trucos-active h3 {
+    font-size: 1.3rem;
+    color: #000000;
 }
 .ficha-tecnica {
     margin: 20px auto;
@@ -249,8 +263,7 @@ abbr:hover {
 }
 .container {
     background-color: #b742b776;
-    margin-left: 30px;
-    margin-right: 30px;
+    margin: 75px 120px;
     border-radius: 10px;
 }
 .titulo {
