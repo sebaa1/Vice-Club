@@ -3,10 +3,6 @@
     src: url("../fonts/Helvetica.otf");
 }
 @font-face {
-    font-family: "Chalet";
-    src: url("../fonts/Chalet.otf");
-}
-@font-face {
     font-family: "Guanine";
     src: url("../fonts/Guanine.otf");
 }
@@ -228,6 +224,10 @@ h4 {
     display: block;
     margin: 0 auto;
 }
+abbr {
+    font-family: "Arial Black Italic";
+    font-size: 0.4rem;
+}
 abbr:hover {
     cursor: help;
 }
@@ -242,14 +242,16 @@ ul {
     padding: 0;
     margin-bottom: 10px;
 }
-span {
-    font-size: 0.4rem;
+abbr {
     font-family: "Arial Black Italic";
-    color: #e8a701;
-    text-shadow: 3px 3px 0 #040401;
-    margin: 0;
-    align-items: center;
-    white-space: nowrap;
+    font-size: 0.4rem;
+    color:#fff700f4;
+}
+abbr:hover, .dma:hover {
+    cursor: help;
+}
+.dma, abbr {
+    text-decoration: underline dotted #eaff00;
 }
 .container {
     background-color: #29356174;
@@ -257,3 +259,7 @@ span {
     margin-right: 30px;
     border-radius: 10px;
 }
+.titulo {
+    font-size: 1.1rem;        
+    font-weight: bold;
+    }

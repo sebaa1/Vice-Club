@@ -222,6 +222,13 @@ h4 {
     display: block;
     margin: 0 auto;
 }
+abbr {
+    font-family: "Chalet";
+    font-size: 0.4rem;
+}
+abbr:hover {
+    cursor:help;
+}
 li {
     list-style-type: none;
 }
@@ -233,17 +240,21 @@ ul {
     padding: 0;
     margin-bottom: 10px;
 }
-span {
-    font-size: 0.4rem;
+abbr {
     font-family: "Chalet";
-    color: #e8a701;
-    text-shadow: 1px 1px 0 #040401;
-    align-items: left;
-    white-space: nowrap;
+    font-size: 0.4rem;
+    color: #aefc69;
+}
+abbr:hover {
+    cursor: help;
 }
 .container {
     background-color: #42b74c50;
     margin-left: 30px;
     margin-right: 30px;
     border-radius: 10px;
+}
+.titulo {
+    font-size: 1.1rem;
+    font-weight: bold;
 }

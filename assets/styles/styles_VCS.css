@@ -3,10 +3,6 @@
     src: url("../fonts/Helvetica.otf");
 }
 @font-face {
-    font-family: "Chalet";
-    src: url("../fonts/Chalet.otf");
-}
-@font-face {
     font-family: "Guanine";
     src: url("../fonts/Guanine.otf");
 }
@@ -243,17 +239,21 @@ ul {
     padding: 0;
     margin-bottom: 10px;
 }
-span {
-    font-size: 0.4rem;
+abbr {
     font-family: "Geneva";
-    color: #e8a701;
-    text-shadow: 1px 1px 0 #040401;
-    align-items: left;
-    white-space: nowrap;
+    font-size: 0.4rem;
+    color: #a900b5fc;
+}
+abbr:hover {
+    cursor: help;
 }
 .container {
     background-color: #b742b776;
     margin-left: 30px;
     margin-right: 30px;
     border-radius: 10px;
+}
+.titulo {
+    font-weight: bold;
+    font-size: 1.1rem;
 }
