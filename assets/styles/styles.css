@@ -120,6 +120,8 @@ h5, p {
     flex-direction: row;
     gap: 10px;
     transition: opacity 0.3s ease;
+    justify-content: center;
+    align-items: center;
 }
 .dropdown-content .logo {
     filter: grayscale(100%);
@@ -138,10 +140,10 @@ h5, p {
     transform: scale(0.8);
 }
 .dropdown-content a {
-    color: transparent
+    color: transparent;
 }
 .header-container:hover .dropdown-content {
-    display: block;
+    display: flex;
 }
 .juego {
     width: 30px

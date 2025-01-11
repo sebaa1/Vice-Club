@@ -209,6 +209,8 @@ a:hover {
     flex-direction: row;
     gap: 10px;
     transition: opacity 0.3s ease;
+    justify-content: center;
+    align-items: center;
 }
 .dropdown-content .logo {
     filter: grayscale(100%);
@@ -230,7 +232,7 @@ a:hover {
     color: transparent
 }
 .header-container:hover .dropdown-content {
-    display: block;
+    display: flex;
 }
 .anchor, .anchor:visited, .anchor:hover {
     font-size: 2.5rem;
