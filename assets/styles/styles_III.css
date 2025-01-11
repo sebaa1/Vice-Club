@@ -241,7 +241,7 @@ text-decoration: underline;
 }
 abbr {
     font-family: "Arial Black Italic";
-    font-size: 0.4rem;
+    font-size: 0.7rem;
 }
 abbr:hover {
     cursor: help;
