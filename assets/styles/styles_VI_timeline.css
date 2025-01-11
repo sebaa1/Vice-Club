@@ -6,6 +6,10 @@
     font-family: "Guanine";
     src: url("../fonts/Guanine.otf");
 }
+@font-face {
+    font-family: "Chalet";
+    src: url("../fonts/Chalet.otf");
+}
 main {
     margin-top: 150px;
 }
