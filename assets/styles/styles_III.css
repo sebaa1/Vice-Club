@@ -188,7 +188,7 @@ h4 {
 .trucos h2, .trucos-active h2 {
 font-weight: bold;
 font-size: 1.1rem;
-color: #7579ab;
+color: #e8a701;
 text-decoration: underline;
 }
 .trucos h3, .trucos-active h3 {
@@ -248,6 +248,9 @@ abbr:hover {
 }
 li {
     list-style-type: none;
+    font-family: 'Open Sans';
+    margin-bottom: 20px;
+    margin-left: 3%
 }
 ul {
     padding: 0;
@@ -259,7 +262,7 @@ ul {
 }
 abbr {
     font-family: "Arial Black Italic";
-    font-size: 0.4rem;
+    font-size: 0.8rem;
     color:#fff700f4;
 }
 abbr:hover, .dma:hover {
@@ -269,11 +272,16 @@ abbr:hover, .dma:hover {
     text-decoration: underline dotted #eaff00;
 }
 .container {
-    background-color: #29356174;
+    background-color: #293561c4;
     margin: 75px 120px;
     border-radius: 10px;
+    padding-bottom: 20px;
 }
 .titulo {
     font-size: 1.1rem;        
     font-weight: bold;
+}
+.boton {
+    width: 30px;
+    height: 25px;
 }
