@@ -38,12 +38,11 @@ body {
 }
 h1 {
     text-align: center;
-    color: #e7c4df;
+    color: #f900aa;
     padding-top: 20px;
     padding-bottom: 20px;
-    font-style: italic;
     font-size: 2.4rem;
-    text-shadow: -1px -1px 0 #8f0571;
+    text-shadow: -1px -1px 0 #232121;
     margin-top: -4px;
     border-bottom: 2px solid transparent;
     border-image-slice: 1;
@@ -120,9 +119,7 @@ h4 {
     padding: 0;
     margin: 0;
 }
-.menu-content li {
-    padding: 10px 0;
-}
+
 .menu-content a {
     text-decoration: none;
     color: #ffffff;
@@ -191,10 +188,10 @@ h4 {
     margin-left: 20px
 }
 .trucos h2, .trucos-active h2 {
-font-weight: bold;
-font-size: 1.1rem;
-color: #50173a;
-text-decoration: underline;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #8e055a;
+    text-decoration: underline;
 }
 .trucos h3, .trucos-active h3 {
     font-size: 1.3rem;
@@ -246,6 +243,9 @@ text-decoration: underline;
 }
 li {
     list-style-type: none;
+    font-family: 'Open Sans';
+    margin-bottom: 20px;
+    margin-left: 3%
 }
 ul {
     padding: 0;
@@ -264,11 +264,16 @@ abbr:hover {
     cursor: help;
 }
 .container {
-    background-color: #b742b776;
+    background-color: #b742b7ad;
     margin: 75px 120px;
     border-radius: 10px;
+    padding-bottom: 20px;
 }
 .titulo {
     font-weight: bold;
     font-size: 1.1rem;
+}
+.boton {
+    width: 30px;
+    height: 25px;
 }
