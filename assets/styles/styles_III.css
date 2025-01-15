@@ -11,7 +11,6 @@
     src: url("../fonts/Arial\ Black\ Italic.ttf");
 }
 * {
-    box-sizing: border-box;
     font-family: "Helvetica";
     position: relative;
     font-size: 1rem
@@ -36,12 +35,9 @@ body {
 }
 h1 {
     font-size: 3rem;
-    font-family: "Chalet";
     color: #e8a701;
     text-shadow: 3px 3px 0 #040401;
-    margin: 0;
     text-align: center;
-    white-space: nowrap;
 }
 h4 {
     font-size: 2.5rem;
@@ -196,39 +192,20 @@ text-decoration: underline;
     color: #ffffff;
 }
 .ficha-tecnica {
-    margin: 20px auto;
+    margin-left: auto;
     max-width: 450px;
-    margin-right: 0;
     border: 3px solid #000000;
     border-radius: 8px;
-    background-color: #294783;
-    padding: 15px;
-    font-family: "Arial Black Italic";
+    background-color: #17294c;
     height: 30%;
-    width: 30%;
+    width: 40%;
 }
 .ficha-tecnica h2 {
-    text-align: center;
     font-size: 1.5rem;
-    color: #ffffff;
-}
-.ficha-tecnica table {
-    width: 100%;
-    border-collapse: collapse;
-}
-.ficha-tecnica th, .ficha-tecnica td {
-    text-align: left;
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
-}
-.ficha-tecnica th {
-    width: 35%;
-    background-color: #484685;
-    font-weight: bold;
-    color: #b0b0b0;
-}
-.ficha-tecnica td {
-    color: #ffffff;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #e8a701;
+    text-shadow: 3px 3px 0 #040401;
 }
 .ficha-tecnica .portada img {
     max-width: 80%;
@@ -239,26 +216,30 @@ text-decoration: underline;
     display: block;
     margin: 0 auto;
 }
-abbr {
-    font-family: "Arial Black Italic";
-    font-size: 0.7rem;
+.ficha-tecnica table {
+    width: 100%;
+    border-collapse: collapse;
 }
-abbr:hover {
-    cursor: help;
+.ficha-tecnica td, .ficha-tecnica th {
+    border-top: 1px solid #a5c5f5;
 }
-li {
-    list-style-type: none;
-    font-family: 'Open Sans';
+.ficha-tecnica th {
+    border-right: 1px solid #a5c5f5;
+    background-color: #130b41;
+}
+.ficha-tecnica li:last-child {
     margin-bottom: 20px;
-    margin-left: 3%
 }
-ul {
+.ficha-tecnica ul {
     padding: 0;
-    margin-bottom: 30px;
+    margin-left: 20px
 }
-.tabla {
-    padding: 0;
+.ficha-tecnica .titulo {
+    font-size: 1.3rem;
+    margin-left: 10px;
     margin-bottom: 10px;
+    font-weight: bold;
+    color: #e8a701;
 }
 abbr {
     font-family: "Arial Black Italic";
@@ -277,11 +258,10 @@ abbr:hover, .dma:hover {
     border-radius: 10px;
     padding-bottom: 20px;
 }
-.titulo {
-    font-size: 1.1rem;        
-    font-weight: bold;
-}
 .boton {
     width: 30px;
     height: 25px;
+}
+li {
+    list-style-type: none;
 }

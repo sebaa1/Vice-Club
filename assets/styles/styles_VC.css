@@ -10,11 +10,7 @@
     font-family: "Arborcrest";
     src: url("../fonts/SF\ Arborcrest.ttf");
 }
-main {
-    margin-top: 150px;
-}
 * {
-    box-sizing: border-box;
     font-family: "Helvetica";
     position: relative;
     font-size: 1rem
@@ -37,15 +33,10 @@ body {
     margin-top: 80px;
 }
 h1 {
-    text-align: center;
+    font-size: 3rem;
     color: #f900aa;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    font-size: 2.4rem;
     text-shadow: -1px -1px 0 #232121;
-    margin-top: -4px;
-    border-bottom: 2px solid transparent;
-    border-image-slice: 1;
+    text-align: center;
 }
 h4 {
     font-size: 2.5rem;
@@ -82,9 +73,9 @@ h4 {
     filter: drop-shadow(0px 0px 10px #dba8ff);
 }
 .header-container {
-    position: relative;
-    display: inline-block;
-    z-index: 1000;
+    display: flex;
+    align-items: center;
+    flex: 0 0 auto;
 }
 .hamburger {
     background: none;
@@ -119,7 +110,9 @@ h4 {
     padding: 0;
     margin: 0;
 }
-
+.menu-content li {
+    padding: 10px 0;
+}
 .menu-content a {
     text-decoration: none;
     color: #ffffff;
@@ -139,7 +132,7 @@ h4 {
     box-shadow: 0px 8px 16px 0px #dba8ff;
     z-index: 999;
     flex-direction: row;
-    gap: 10px;
+    gap: 20px;
     transition: opacity 0.3s ease;
     justify-content: center;
     align-items: center;
@@ -198,39 +191,20 @@ h4 {
     color: #000000;
 }
 .ficha-tecnica {
-    margin: 20px auto;
+    margin-left: auto;
     max-width: 450px;
-    margin-right: 0;
     border: 3px solid #000000;
     border-radius: 8px;
     background-color: #f89ed9;
-    padding: 15px;
-    font-family: "Arial Black Italic";
     height: 30%;
-    width: 30%;
+    width: 40%;
 }
 .ficha-tecnica h2 {
-    text-align: center;
     font-size: 1.5rem;
-    color: #333;
-}
-.ficha-tecnica table {
-    width: 100%;
-    border-collapse: collapse;
-}
-.ficha-tecnica th, .ficha-tecnica td {
-    text-align: left;
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
-}
-.ficha-tecnica th {
-    width: 35%;
-    background-color: #e3c1e2;
-    font-weight: bold;
-    color: #555;
-}
-.ficha-tecnica td {
-    color: #333;
+    margin-bottom:10px;
+    text-align: center;
+    color: #0f0b0b;
+    text-shadow: 3px 3px 0 #ff0ab5;
 }
 .ficha-tecnica .portada img {
     max-width: 80%;
@@ -241,24 +215,35 @@ h4 {
     display: block;
     margin: 0 auto;
 }
-li {
-    list-style-type: none;
-    font-family: 'Open Sans';
+.ficha-tecnica table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.ficha-tecnica td, .ficha-tecnica th {
+    border-bottom: 1px solid #420118;
+}
+.ficha-tecnica th {
+    border-right: 1px solid #420118;
+    background-color: #f93aa9;
+}
+.ficha-tecnica li:last-child {
     margin-bottom: 20px;
-    margin-left: 3%
 }
-ul {
+.ficha-tecnica ul {
     padding: 0;
-    margin-bottom: 30px;
+    margin-left: 20px
 }
-.tabla {
-    padding: 0;
+.ficha-tecnica .titulo {
+    font-size: 1.3rem;
+    margin-left: 10px;
     margin-bottom: 10px;
+    font-weight: bold;
+    color: #f92cb8;
 }
 abbr {
     font-family: "Arborcrest";
-    font-size: 0.7rem;
-    color: #b9159b;
+    font-size: 0.8rem;
+    color:#8c0953f4;
 }
 abbr:hover {
     cursor: help;
@@ -269,11 +254,10 @@ abbr:hover {
     border-radius: 10px;
     padding-bottom: 20px;
 }
-.titulo {
-    font-weight: bold;
-    font-size: 1.1rem;
-}
 .boton {
     width: 30px;
     height: 25px;
+}
+li {
+    list-style: none;
 }
