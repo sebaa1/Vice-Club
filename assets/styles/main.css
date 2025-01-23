@@ -6,10 +6,6 @@
     font-family: "Guanine";
     src: url("../fonts/Guanine.otf");
 }
-@font-face {
-    font-family: "Helvetica Neue Heavy";
-    src: url("../fonts/HelveticaNeueHeavy.otf");
-}
 * {
     font-family: "Helvetica";
     position: relative;
@@ -22,29 +18,21 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(../images/fondo_iv.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    filter: blur(7px);
     z-index: -1;
 }
 body {
-    color: white;
     margin-top: 80px;
 }
 h1 {
     font-size: 3rem;
-    color:#000000;
-    text-shadow: 2px 2px 4px #ddd;
     text-align: center;
-
 }
 h4 {
     font-size: 2.5rem;
     font-family: "Guanine";
-    color: #b2b2b2;
-    text-shadow: 3px 3px 0 #000000;
     margin: 0;
     text-align: center;
     white-space: nowrap;
@@ -64,7 +52,6 @@ h4 {
     width: 100%;
     top: 0;
     left: 0;
-    background-image: linear-gradient(150deg, #9fa5a6, #1b1616);
     border-bottom: 3px solid black;
     z-index: 1;
 }
@@ -72,7 +59,6 @@ h4 {
     display: block;
     max-width: 80px;
     height: auto;
-    filter: drop-shadow(0px 0px 10px #000000);
 }
 .header-container {
     display: flex;
@@ -90,7 +76,6 @@ h4 {
     width: 25px;
     height: 3px;
     margin: 5px;
-    background-color: #faf6f6;
     transition: transform 0.3s ease;
 }
 .menu-content {
@@ -98,9 +83,7 @@ h4 {
     position: absolute;
     right: 0;
     top: 100%;
-    background-color: #403e3e;
     padding: 1.5rem;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1000;
     border-radius: 12px;
 }
@@ -117,11 +100,6 @@ h4 {
 }
 .menu-content a {
     text-decoration: none;
-    color: #ffffff;
-    font-family: "Helvetica Neue Heavy";
-}
-.menu-content a.active {
-    color: #9e9d9d;
 }
 .dropdown-content {
     display: none;
@@ -130,8 +108,6 @@ h4 {
     left: 0;
     width: 100%;
     margin-top: 0;
-    background-color: rgba(64, 41, 66, 0.85);
-    box-shadow: 0px 8px 16px 0px #decbb9;
     z-index: 999;
     flex-direction: row;
     gap: 10px;
@@ -156,7 +132,7 @@ h4 {
     transform: scale(0.8);
 }
 .dropdown-content a {
-    color: transparent;
+    color: transparent
 }
 .header-container:hover .dropdown-content {
     display: flex;
@@ -164,8 +140,6 @@ h4 {
 .anchor, .anchor:visited {
     font-size: 2.5rem;
     font-family: "Guanine";
-    color: #b2b2b2;
-    text-shadow: 3px 3px 0 #000000;
     margin: 0;
     grid-column: 2;
     text-align: center;
@@ -173,35 +147,34 @@ h4 {
     text-decoration: none;
 }
 .trucos {
+    display: none;
+}
+.trucos.active {
+    display: block;
     margin-left: 40px;
 }
-.trucos span {
-    font-weight: bold;
-    font-size: 1.3rem;
-    color: #ffffff;
-    text-decoration: underline
+.menu {
+    margin-left: 20px
 }
-.trucos h3 {
+.trucos h2, .trucos-active h2 {
+    font-size: 1.1rem;
     font-weight: bold;
-    font-size: 1.3rem;
-    color: #161616;
     text-decoration: underline;
+}
+.trucos h3, .trucos-active h3 {
+    font-size: 1.3rem;
 }
 .ficha-tecnica {
     margin-left: auto;
     max-width: 450px;
-    border: 3px solid #000000;
     border-radius: 8px;
-    background-color: #777977;
     height: 30%;
     width: 40%;
 }
 .ficha-tecnica h2 {
     font-size: 1.5rem;
-    margin-bottom:10px;
+    margin-bottom: 10px;
     text-align: center;
-    color: #0f0b0b;
-    text-shadow: 3px 3px 4px #d9d9d9;
 }
 .ficha-tecnica .portada img {
     max-width: 80%;
@@ -216,13 +189,6 @@ h4 {
     width: 100%;
     border-collapse: collapse;
 }
-.ficha-tecnica td, .ficha-tecnica th {
-    border-bottom: 1px solid #420118;
-}
-.ficha-tecnica th {
-    border-right: 1px solid #420118;
-    background-color: #353535;
-}
 .ficha-tecnica li:last-child {
     margin-bottom: 20px;
 }
@@ -235,12 +201,9 @@ h4 {
     margin-left: 10px;
     margin-bottom: 10px;
     font-weight: bold;
-    color: #2f2f2f;
 }
 abbr {
-    font-family: "Helvetica Neue Heavy";
     font-size: 0.8rem;
-    color:#eeeeeef4;
 }
 abbr:hover {
     cursor: help;
@@ -250,11 +213,15 @@ abbr:hover {
     margin-bottom: 10px;
 }
 .container {
-    background-color: #111210ad;
     margin: 75px 120px;
     border-radius: 10px;
     padding-bottom: 20px;
 }
+.boton {
+    width: 30px;
+    height: 25px;
+}
 li {
     list-style: none;
 }
+
