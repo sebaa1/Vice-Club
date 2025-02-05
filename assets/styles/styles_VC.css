@@ -4,7 +4,7 @@
 }
 body::before {
     background-image: url(../images/fondo_vc.jpeg);
-    filter: blur(1px);
+    filter: blur(10px);
 }
 h1 {
     color: #f900aa;
@@ -25,17 +25,17 @@ h4 {
     background-color: #faf6f6;
 }
 .menu-content {
-    background-color: #201c1c;
+    background-color: #f230d5ba;
 }
 .menu-content a {
-    color: #ffffff;
+    color: #000000;
     font-family: "Arborcrest";
 }
 .menu-content a.active {
-    color: #00ffeb;
+    color: #00ffea;
 }
 .dropdown-content {
-    background-color: rgba(64, 41, 66, 0.85);
+    background-color: rgba(130, 45, 138, 0.85);
     box-shadow: 0px 8px 16px 0px #dba8ff;
 }
 .anchor, .anchor:visited {
@@ -71,5 +71,5 @@ abbr {
     color:#8c0953f4;
 }
 .container {
-    background-color: #b742b7ad;
+    background-color: #ae35f9ad;
 }

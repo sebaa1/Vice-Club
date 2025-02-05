@@ -25,7 +25,8 @@ h4 {
     background-color: #faf6f6;
 }
 .menu-content {
-    background-color: #201c1c;
+    background-color: #135519;
+    border: 3px solid #000000;
 }
 .menu-content a {
     color: #ffffff;
@@ -35,8 +36,8 @@ h4 {
     color: #55b72b;
 }
 .dropdown-content {
-    background-color: rgba(64, 41, 66, 0.85);
-    box-shadow: 0px 8px 16px 0px #dba8ff;
+    background-color: rgba(60, 131, 74, 0.85);
+    box-shadow: 0px 8px 16px 0px #1b4c0d;
 }
 .anchor, .anchor:visited {
     color: #eb6b09;
