@@ -1,3 +1,78 @@
+@media screen and (max-width: 425px) {
+    body {
+        padding: 0 10px;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    .header {
+        height: 60px;
+        padding: 0 10px;
+        border-bottom: 2px solid black;
+    }
+    .header-img {
+        max-width: 50px;
+    }
+    .hamburger {
+        padding: 0.3rem;
+    }
+    .menu-content {
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+    .menu-content ul {
+        padding: 0;
+    }
+    .menu-content li {
+        padding: 8px 0;
+    }
+    .ficha-tecnica {
+        width: 70%;
+        max-width: 200px;
+    }
+    .ficha-tecnica h2 {
+        font-size: 1.1rem !important;
+        margin-bottom: -10px !important; 
+    }
+    .ficha-tecnica li, .ficha.tecnica th {
+        font-size: 0.8rem !important
+    }
+    .ficha-tecnica td, .ficha-tecnica th {
+        border-top: 1px transparent !important;
+    }
+    .ficha-tecnica th {
+        padding: 0 !important;
+    }
+    .ficha-tecnica .portada img {
+        transform: scale(0.9);
+        transform: scaleY(0.8);
+    }
+    .ficha-tecnica table {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .dropdown-content {
+        top: 70px;
+        flex-wrap: wrap;
+        padding: 5px;
+    }
+    .dropdown-content img {
+        height: 20px;
+        width: 35px;
+        transform: scale(0.7);
+    }
+    .dropdown-content a {
+        width: 60px;
+        display: flex;
+        justify-content: center;
+    }
+    .container {
+        padding: 10px;
+        max-width: 400px;
+        width: 90%;
+    }
+}
 @font-face {
     font-family: "Helvetica";
     src: url("../fonts/Helvetica.otf");
@@ -165,11 +240,8 @@ h4 {
     font-size: 1.3rem;
 }
 .ficha-tecnica {
-    margin-left: auto;
-    max-width: 450px;
-    border-radius: 8px;
-    height: 30%;
-    width: 40%;
+    justify-self: end;
+    max-width: 400px;
 }
 .ficha-tecnica h2 {
     font-size: 1.5rem;
@@ -213,9 +285,11 @@ abbr:hover {
     margin-bottom: 10px;
 }
 .container {
-    margin: 75px 120px;
-    border-radius: 10px;
-    padding-bottom: 20px;
+    margin: 20px auto;
+    padding: 15px;
+    max-width: 1200px;
+    width: 90%;
+    border-radius: 15px;
 }
 .boton {
     width: 30px;
@@ -224,4 +298,3 @@ abbr:hover {
 li {
     list-style: none;
 }
-
