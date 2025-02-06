@@ -28,25 +28,22 @@
         padding: 8px 0;
     }
     .ficha-tecnica {
-        width: 70%;
-        max-width: 200px;
+        width: 60%;
+        max-width: 100px;
     }
     .ficha-tecnica h2 {
         font-size: 1.1rem !important;
         margin-bottom: -10px !important; 
     }
     .ficha-tecnica li, .ficha.tecnica th {
-        font-size: 0.8rem !important
+        font-size: 0.8rem !important;
     }
     .ficha-tecnica td, .ficha-tecnica th {
         border-top: 1px transparent !important;
     }
-    .ficha-tecnica th {
-        padding: 0 !important;
-    }
     .ficha-tecnica .portada img {
-        transform: scale(0.9);
-        transform: scaleY(0.8);
+        transform: scale(0.8);
+        transform: scaleY(0.7);
     }
     .ficha-tecnica table {
         width: 90%;
@@ -242,6 +239,7 @@ h4 {
 .ficha-tecnica {
     justify-self: end;
     max-width: 400px;
+    border-radius: 6px;
 }
 .ficha-tecnica h2 {
     font-size: 1.5rem;
