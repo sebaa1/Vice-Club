@@ -3,7 +3,7 @@
     src: url("../fonts/Eurostile Bold.ttf");
 }
 body::before {
-    background-image: url(../images/fondo_lcs.png);
+    background-image: url(../images/fondo_lcs.webp);
     filter: blur(3px);
 }
 h1 {

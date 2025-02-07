@@ -3,7 +3,7 @@
     src: url("../fonts/Chalet.otf");
 }
 body::before {
-    background-image: url(../images/fondo_vi.jpg);
+    background-image: url(../images/fondo_vi.webp);
     filter: blur(3px);
 }
 .block h1 {

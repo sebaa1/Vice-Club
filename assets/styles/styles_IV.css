@@ -3,7 +3,7 @@
     src: url("../fonts/HelveticaNeueHeavy.otf");
 }
 body::before {
-    background-image: url(../images/fondo_iv.jpg);
+    background-image: url(../images/fondo_iv.webp);
     filter: blur(10px);
 }
 body {

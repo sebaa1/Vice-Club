@@ -3,7 +3,7 @@
     src: url("../fonts/Guanine.otf");
 }
 body::before {
-    background-image: url(../images/fondo_v.jpg);
+    background-image: url(../images/fondo_v.webp);
     filter: blur(10px);
 }
 h1 {

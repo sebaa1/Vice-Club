@@ -3,7 +3,7 @@
     src: url("../fonts/Bank\ Gothic.ttf");
 }
 body::before {
-    background-image: url(../images/fondo_sa.jpg);
+    background-image: url(../images/fondo_sa.webp);
     filter: blur(5px);
 }
 h1 {

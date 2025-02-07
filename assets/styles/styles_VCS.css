@@ -3,7 +3,7 @@
     src: url("../fonts/Geneva\ Regular.ttf");
 }
 body::before {
-    background-image: url(../images/fondo_vcs.jpg);
+    background-image: url(../images/fondo_vcs.webp);
     filter: blur(10px);
 }
 h1 {
