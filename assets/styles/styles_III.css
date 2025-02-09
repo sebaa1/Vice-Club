@@ -3,7 +3,7 @@
     src: url("../fonts/Arial\ Black\ Italic.ttf");
 }
 body::before {
-    background-image: url(../images/fondo_iii.jpeg);
+    background-image: url(../images/fondo_iii.webp);
     filter: blur(10px);
 }
 body {

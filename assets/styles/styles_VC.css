@@ -3,7 +3,7 @@
     src: url("../fonts/SF\ Arborcrest.ttf");
 }
 body::before {
-    background-image: url(../images/fondo_vc.jpeg);
+    background-image: url(../images/fondo_vc.webp);
     filter: blur(10px);
 }
 h1 {
