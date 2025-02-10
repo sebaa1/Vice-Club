@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Vice Club, GTA III, Radio, Head Radio, Double Clef FM, K-JAH, Lips FM, Game Radio FM, MSX FM, Flashback 95.6, Grand Theft Auto, Rockstar Games">
+    <meta name="description" content="Escucha todas las radios de Grand Theft Auto: III">
     <link rel="stylesheet" href="../assets/styles/styles_III.css">
     <link rel="stylesheet" href="../assets/styles/main.css">
     <link rel="icon" type="image/webp" href="../assets/images/header.webp">
@@ -56,51 +58,35 @@
                 </div>
             </nav>
         </header>
-        <h2>Radios de GTA III</h2>
+        <h2 class="radio-titulo">Radios de GTA III</h2>
         <div class="radio-container">
-            <h3>Head Radio</h3>
-            <img src="../assets/images/headradio.webp" style="width: 60px; height: 60px;">
-            <audio src="../assets/audio/headradio.mp3" controls></audio>
-        </div>
-        <div class="radio-container">
-            <h3>Double Clef FM</h3>
-            <img src="../assets/images/doublecleff.webp" style="width: 60px; height: 55px; background-color: #98fcff;">
-            <audio src="../assets/audio/doublecleff.mp3" controls></audio>
-        </div>
-        <div class="radio-container">
-            <h3>K-JAH</h3>
-            <img src="../assets/images/k-jah.webp" style="width: 60px; height: 55px; background-color: #98fcff;">
-            <audio src="../assets/audio/k-jah.mp3" controls></audio>
-        </div>
-        <div class="radio-container">
-            <h3>Lips FM</h3>
-            <img src="../assets/images/lips.webp" style="width: 60px; height: 55px; background-color: #ffffff;">
-            <audio src="../assets/audio/lips.mp3" controls></audio>
-        </div>
-        <div class="radio-container">
-            <h3>Game Radio FM</h3>
-            <img src="../assets/images/game fm.webp" style="width: 60px; height: 55px; background-color: #98fcff;">
-            <audio src="../assets/audio/game fm.mp3" controls></audio>
-        </div>
-        <div class="radio-container">
-            <h3>MSX FM</h3>
-            <img src="../assets/images/msx.webp" style="width: 60px; height: 55px; background-color: #c5b7e9;">
-            <audio src="../assets/audio/msx.mp3" controls></audio>
-        </div>
-        <div class="radio-container">
-            <h3>Flashback 95.6</h3>
-            <img src="../assets/images/flashback.webp" style="width: 70px; height: 70px;">
-            <audio src="../assets/audio/flashback.mp3" controls></audio>
+            <img src="../assets/images/headradio.webp" class="portada">
+            <audio src="../assets/audio/headradio.mp3" class="song"></audio>
+            <img src="../assets/images/doublecleff.webp" class="portada">
+            <audio src="../assets/audio/doublecleff.mp3" class="song"></audio>
+            <img src="../assets/images/k-jah.webp" class="portada">
+            <audio src="../assets/audio/k-jah.mp3" class="song"></audio>
+            <img src="../assets/images/lips.webp" class="portada">
+            <audio src="../assets/audio/lips.mp3" class="song"></audio>
+            <img src="../assets/images/game fm.webp" class="portada">
+            <audio src="../assets/audio/game fm.mp3" class="song"></audio>
+            <img src="../assets/images/msx.webp" class="portada">
+            <audio src="../assets/audio/msx.mp3" class="song"></audio>
+            <img src="../assets/images/flashback.webp" class="portada">
+            <audio src="../assets/audio/flashback.mp3" class="song"></audio>
         </div>
         <footer id="nowPlaying" class="hidden">
             <div class="footer-content">
                 <img id="playingImage" src="" alt="Radio en reproducción">
                 <p id="playingTitle">Reproduciendo:</p>
+                <div id="progressBarContainer">
+                    <div id="progressBar"></div>
             </div>
         </footer>
         <script src="../assets/scripts/abrir menu.js"></script>
         <script src="../assets/scripts/header.js"></script>
         <script src="../assets/scripts/now-playing.js"></script>
+        <script src="../assets/scripts/progressbar.js"></script>
     </div>
 </body>
 </html>

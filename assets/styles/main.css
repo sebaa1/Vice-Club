@@ -139,9 +139,10 @@ h4 {
 }
 .hamburger {
     background: none;
-    border: none;
     cursor: pointer;
-    padding: 0.5rem;
+    padding: 0.2rem;
+    margin-right: 4px;
+    border-radius: 6px;
 }
 .line {
     display: block;
@@ -159,6 +160,7 @@ h4 {
     z-index: 1000;
     border-radius: 12px;
     border: 3px solid #000000;
+    margin: 8px 3px;
 }
 .menu-content.show {
     display: block;
@@ -173,6 +175,7 @@ h4 {
 }
 .menu-content a {
     text-decoration: none;
+    font-size: 0.95rem
 }
 .dropdown-content {
     display: none;
@@ -198,17 +201,13 @@ h4 {
 .dropdown-content img {
     height: 100px;
     width: auto;
-    transition: transform 0.2s ease;
     transform: scale(0.6);
 }
 .dropdown-content img:hover {
-    transform: scale(0.8);
+    transform: scale(0.9);
 }
 .dropdown-content a {
     color: transparent
-}
-.header-container:hover .dropdown-content {
-    display: flex;
 }
 .anchor, .anchor:visited {
     font-size: 2.5rem;
@@ -296,6 +295,34 @@ abbr:hover {
 li {
     list-style: none;
 }
+.radio-titulo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0 0 60px 0;
+    text-align: center;
+}
+.radio-container {
+    display: grid;
+    grid-template-columns: repeat(4, 240px);
+    gap: 50px;
+    padding: 10px;
+    justify-content: center;
+}
+.radio-container img {
+    width: 200px;
+    height: 200px;
+    padding: 20px 13px;
+    border: 4px solid;
+    border-radius: 7px;
+}
+.radio-container img:hover {
+    filter: blur(0.7px) brightness(0.3);
+    transition: 0.25s ease-in;
+    cursor: pointer;
+}
+audio {
+    display:none
+}
 footer {
     height: 60px;
     width: 100%;
@@ -327,4 +354,22 @@ footer p {
 }
 footer.hidden {
     display: none;
+}
+#playingImage {
+    padding: 15px;
+    margin: 10px;
+}
+#playingTitle {
+    margin-bottom: 12px;
+}
+#progressBarContainer {
+    width: 340px;
+    height: 4px;
+    position: relative;
+    top:20px;
+    right: 170px
+}
+#progressBar {
+    width: 0;
+    height: 100%;
 }

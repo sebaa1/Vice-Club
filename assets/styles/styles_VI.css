@@ -64,12 +64,14 @@ body::before {
 .header-img {
     filter: drop-shadow(3px 0px 5px #8beef9);
 }
+.hamburger {
+    border: 3px solid #e64abf;
+}
 .line {
-    background-color: #faf6f6;
+    background-color: #5c2d66;
 }
 .menu-content {
-    background-color: #472847ee;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color: #472847f8;
 }
 .menu-content a {
     color: #ffffff;
@@ -78,7 +80,7 @@ body::before {
     color:#800080;
 }
 .dropdown-content {
-    background-color: rgba(64, 41, 66, 0.85);
+    background-color: rgba(64, 41, 66, 0.829);
     box-shadow: 0px 8px 16px 0px #44ffc4;
 }
 .anchor, .anchor:visited {

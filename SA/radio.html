@@ -56,66 +56,41 @@
                 </div>
             </nav>
         </header>
-        <h2>Radios de GTA SA</h2>
+        <h2 class="radio-titulo">Radios de GTA SA</h2>
         <div class="radio-container">
-        <h3>Playback FM</h3>
-        <img src="../assets/images/playback.webp" style="width: 60px; height: 60px;">
-        <audio src="../assets/audio/playback.mp3" controls></audio>
-        </div>
-        <div class="radio-container">
-        <h3>K-Rose</h3>
-        <img src="../assets/images/k-rose.webp" style="width: 60px; height: 55px; background-color: #98fcff;">
-        <audio src="../assets/audio/k-rose.mp3" controls></audio>
-        </div>
-        <div class="radio-container">
-        <h3>K-DST</h3>
-        <img src="../assets/images/k-dst.webp" style="width: 60px; height: 55px; background-color: #98fcff;">
-        <audio src="../assets/audio/k-dst.mp3" controls></audio>
-        </div>
-        <div class="radio-container">
-        <h3>Bounce FM</h3>
-        <img src="../assets/images/bounce.webp" style="width: 60px; height: 55px; background-color: #ffffff;">
-        <audio src="../assets/audio/bounce.mp3" controls></audio>
-        </div>
-        <div class="radio-container">
-        <h3>SF-UR</h3>
-        <img src="../assets/images/sfur.webp" style="width: 60px; height: 55px; background-color: #98fcff;">
-        <audio src="../assets/audio/sfur.mp3" controls></audio>
-        </div>
-        <div class="radio-container">
-        <h3>Radio Los Santos</h3>
-        <img src="../assets/images/rls.webp" style="width: 60px; height: 55px; background-color: #c5b7e9;">
-        <audio src="../assets/audio/rls.mp3" controls></audio>
-        </div>
-        <div class="radio-container">
-        <h3>Radio X</h3>
-        <img src="../assets/images/radio_x.webp" style="width: 70px; height: 70px;">
-        <audio src="../assets/audio/radio_x.mp3" controls></audio>
-        </div>
-        <div class="radio-container">
-        <h3>CSR 103.9</h3>
-        <img src="../assets/images/csr.webp" style="width: 70px; height: 70px;">
-        <audio src="../assets/audio/csr.mp3" controls></audio>
-        </div>
-        <div class="radio-container">
-        <h3>K-Jah West</h3>
-        <img src="../assets/images/k-jah_w.webp" style="width: 70px; height: 70px;">
-        <audio src="../assets/audio/k-jah_w.mp3" controls></audio>
-        </div>
-        <div class="radio-container">
-        <h3>Master Sounds 98.3</h3>
-        <img src="../assets/images/master.webp" style="width: 70px; height: 70px;">
-        <audio src="../assets/audio/master.mp3" controls></audio>
+        <img src="../assets/images/playback.webp" class="portada">
+        <audio src="../assets/audio/playback.mp3" class="song"></audio>
+        <img src="../assets/images/k-rose.webp" class="portada">
+        <audio src="../assets/audio/k-rose.mp3" class="song"></audio>
+        <img src="../assets/images/k-dst.webp" class="portada">
+        <audio src="../assets/audio/k-dst.mp3" class="song"></audio>
+        <img src="../assets/images/bounce.webp" class="portada">
+        <audio src="../assets/audio/bounce.mp3" class="song"></audio>
+        <img src="../assets/images/sfur.webp" class="portada">
+        <audio src="../assets/audio/sfur.mp3" class="song"></audio>
+        <img src="../assets/images/rls.webp" class="portada">
+        <audio src="../assets/audio/rls.mp3" class="song"></audio>
+        <img src="../assets/images/radio_x.webp" class="portada">
+        <audio src="../assets/audio/radio_x.mp3" class="song"></audio>
+        <img src="../assets/images/csr.webp" class="portada">
+        <audio src="../assets/audio/csr.mp3" class="song"></audio>
+        <img src="../assets/images/k-jah_w.webp" class="portada">
+        <audio src="../assets/audio/k-jah_w.mp3"class="song"></audio>
+        <img src="../assets/images/master.webp" class="portada">
+        <audio src="../assets/audio/master.mp3" class="song"></audio>
         </div>
         <footer id="nowPlaying" class="hidden">
             <div class="footer-content">
                 <img id="playingImage" src="" alt="Radio en reproducción">
                 <p id="playingTitle">Reproduciendo:</p>
+                <div id="progressBarContainer">
+                    <div id="progressBar"></div>
             </div>
         </footer>
         <script src="../assets/scripts/abrir menu.js"></script>
         <script src="../assets/scripts/header.js"></script>
         <script src="../assets/scripts/now-playing.js"></script>
+        <script src="../assets/scripts/progressbar.js"></script>
     </div>
 </body>
 </html>

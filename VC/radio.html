@@ -56,46 +56,35 @@
                 </div>
             </nav>
         </header>
-        <h2>Radios de GTA VC</h2>
+        <h2 class="radio-titulo">Radios de GTA VC</h2>
         <div class="radio-container">
-            <h3>Wildstyle Pirate Radio</h3>
-            <img src="../assets/images/wildstyle.webp" style="width: 80px; height: 55px;">
-            <audio src="../assets/audio/wildstyle.mp3" controls></audio>
+            <img src="../assets/images/wildstyle.webp" class="portada">
+            <audio src="../assets/audio/wildstyle.mp3" class="song"></audio>
+            <img src="../assets/images/flash.webp" class="portada">
+            <audio src="../assets/audio/flash.mp3" class="song"></audio>
+            <img src="../assets/images/fever.webp" class="portada">
+            <audio src="../assets/audio/fever.mp3" class="song"></audio>
+            <img src="../assets/images/v-rock.webp" class="portada">
+            <audio src="../assets/audio/v-rock.mp3"  class="song"></audio>
+            <img src="../assets/images/espantoso.webp" class="portada">
+            <audio src="../assets/audio/espantoso.mp3" class="song"></audio>
+            <img src="../assets/images/emotion.webp" class="portada">
+            <audio src="../assets/audio/emotion.mp3" class="song"></audio>
+            <img src="../assets/images/wave.webp" class="portada">
+            <audio src="../assets/audio/wave.mp3" class="song"></audio>
         </div>
-        <div class="radio-container">
-            <h3>Fever 105</h3>
-            <img src="../assets/images/fever.webp" style="width: 60px; height: 50px;">
-            <audio src="../assets/audio/fever.mp3" controls></audio>
-        </div>
-        <div class="radio-container">
-            <h3>V-Rock</h3>
-            <img src="../assets/images/v-rock.webp" style="width: 70px; height: 70px;">
-            <audio src="../assets/audio/v-rock.mp3" controls></audio>
-        </div>
-        <div class="radio-container">
-            <h3>Radio Espantoso</h3>
-            <img src="../assets/images/espantoso.webp" style="width: 70px; height: 55px;">
-            <audio src="../assets/audio/espantoso.mp3" controls></audio>
-        </div>
-        <div class="radio-container">
-            <h3>Emotion 98.3</h3>
-            <img src="../assets/images/emotion.webp" style="width: 120px; height: 50px;">
-            <audio src="../assets/audio/emotion.mp3" controls></audio>
-        </div>
-        <div class="radio-container">
-            <h3>Wave 103</h3>
-            <img src="../assets/images/wave.webp" style="width: 100px; height: 50px;">
-            <audio src="../assets/audio/wave.mp3" controls></audio>
-        </div> 
-        <footer id="nowPlaying" class="hidden">
-            <div class="footer-content">
-                <img id="playingImage" src="" alt="Radio en reproducción">
-                <p id="playingTitle">Reproduciendo:</p>
+    <footer id="nowPlaying" class="hidden">
+        <div class="footer-content">
+            <img id="playingImage" src="" alt="Radio en reproducción">
+            <p id="playingTitle">Reproduciendo:</p>
+            <div id="progressBarContainer">
+                <div id="progressBar"></div>
             </div>
-        </footer>
-        <script src="../assets/scripts/abrir menu.js"></script>
-        <script src="../assets/scripts/header.js"></script>
-        <script src="../assets/scripts/now-playing.js"></script>
-    </div>
+        </div>    
+    </footer>
+    <script src="../assets/scripts/abrir menu.js"></script>
+    <script src="../assets/scripts/header.js"></script>
+    <script src="../assets/scripts/now-playing.js"></script>
+    <script src="../assets/scripts/progressbar.js"></script>
 </body>
 </html>

@@ -20,8 +20,11 @@ h4 {
 .header-img {
     filter: drop-shadow(0px 0px 10px #f28dcb);
 }
+.hamburger {
+    border: 3px solid #ce0ee7;
+}
 .line {
-    background-color: #faf6f6;
+    background-color: #f80bd9;
 }
 .menu-content {
     background-color: #810543db;
