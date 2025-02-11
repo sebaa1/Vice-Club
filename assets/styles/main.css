@@ -129,8 +129,7 @@ h4 {
 }
 .header-img {
     display: block;
-    max-width: 80px;
-    height: auto;
+    height: 70px;
 }
 .header-container {
     display: flex;
@@ -282,7 +281,7 @@ abbr:hover {
     margin-bottom: 10px;
 }
 .container {
-    margin: 20px auto;
+    margin: 90px auto;
     padding: 15px;
     max-width: 1200px;
     width: 90%;
@@ -313,40 +312,35 @@ li {
     height: 200px;
     padding: 20px 13px;
     border: 4px solid;
-    border-radius: 7px;
+    border-radius: 20px;
 }
 .radio-container img:hover {
     filter: blur(0.7px) brightness(0.3);
-    transition: 0.25s ease-in;
+    transition: 0.25s ease-in-out;
     cursor: pointer;
 }
 audio {
     display:none
 }
 footer {
-    height: 60px;
+    height: 70px;
     width: 100%;
-    color: rgb(0, 0, 0);
-    padding: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    color: #000000;
     font-size: 16px;
     position: fixed;
     bottom: 0;
     left: 0;
-    text-align: center;
 }
 footer img {
     width: 50px;
     height: auto;
-    border-radius: 5px;
+    border-radius: 10px;
     margin-right: 15px;
 }
 .footer-content {
     display: flex;
-    align-items: center;
-    gap: 10px;
+    justify-content: space-between;
+    align-items: center
 }
 footer p {
     margin: 0;
@@ -356,20 +350,51 @@ footer.hidden {
     display: none;
 }
 #playingImage {
-    padding: 15px;
     margin: 10px;
 }
 #playingTitle {
-    margin-bottom: 12px;
+    flex: 1;
+    text-align: left;
+    font-size: 18px;
 }
 #progressBarContainer {
-    width: 340px;
-    height: 4px;
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 6px;
+    background: #ffffff;
+    border-radius: 3px;
     position: relative;
-    top:20px;
-    right: 170px
+    cursor: pointer;
+    overflow: hidden;
+}
+#progressBarContainer:hover, #progressBar:hover {
+    cursor: pointer;
 }
 #progressBar {
-    width: 0;
     height: 100%;
+    width: 0%;
+    transition: width 0.12s ease-in;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#progressThumb {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.12s ease-in;
+}
+#progressBarContainer:hover #progressThumb {
+    opacity: 1;
+}
+#timeCurrent {
+    flex: 1;
+    text-align: left;
+    margin: 6px
 }

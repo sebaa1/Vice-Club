@@ -60,20 +60,42 @@
         </header>
         <h2 class="radio-titulo">Radios de GTA III</h2>
         <div class="radio-container">
-            <img src="../assets/images/headradio.webp" class="portada">
-            <audio src="../assets/audio/headradio.mp3" class="song"></audio>
-            <img src="../assets/images/doublecleff.webp" class="portada">
-            <audio src="../assets/audio/doublecleff.mp3" class="song"></audio>
-            <img src="../assets/images/k-jah.webp" class="portada">
-            <audio src="../assets/audio/k-jah.mp3" class="song"></audio>
-            <img src="../assets/images/lips.webp" class="portada">
-            <audio src="../assets/audio/lips.mp3" class="song"></audio>
-            <img src="../assets/images/game fm.webp" class="portada">
-            <audio src="../assets/audio/game fm.mp3" class="song"></audio>
-            <img src="../assets/images/msx.webp" class="portada">
-            <audio src="../assets/audio/msx.mp3" class="song"></audio>
-            <img src="../assets/images/flashback.webp" class="portada">
-            <audio src="../assets/audio/flashback.mp3" class="song"></audio>
+
+            <img src="../assets/images/headradio.webp" class="portada" alt="Head Radio">
+            <audio class="song">
+                <source src="https://viceclub.s3.us-east-1.amazonaws.com/III/Head+Radio.mp3" type="audio/mp3">
+            </audio>
+
+            <img src="../assets/images/doublecleff.webp" class="portada" alt="Double Clef FM">
+            <audio class="song">
+                <source src="https://viceclub.s3.us-east-1.amazonaws.com/III/Double+Clef+FM.mp3" type="audio/mp3">
+            </audio>
+
+            <img src="../assets/images/k-jah.webp" class="portada" alt="K-JAH Radio">
+            <audio class="song">
+                <source src="https://viceclub.s3.us-east-1.amazonaws.com/III/K-JAH+Radio.mp3" type="audio/mp3">
+            </audio>
+
+            <img src="../assets/images/lips.webp" class="portada" alt="Lips 106">
+            <audio class="song">
+                <source src="https://viceclub.s3.us-east-1.amazonaws.com/III/Lips+106.mp3" type="audio/mp3">
+            </audio>
+
+            <img src="../assets/images/game fm.webp" class="portada" alt="Game Radio FM">
+            <audio class="song">
+                <source src="https://viceclub.s3.us-east-1.amazonaws.com/III/Game+Radio+FM.mp3" type="audio/mp3">
+            </audio>
+
+            <img src="../assets/images/msx.webp" class="portada" alt="MSX FM">
+            <audio class="song">
+                <source src="https://viceclub.s3.us-east-1.amazonaws.com/III/MSX+FM.mp3" type="audio/mp3">
+            </audio>
+
+            <img src="../assets/images/flashback.webp" class="portada" alt="Flashback FM">
+            <audio class="song">
+                <source src="https://viceclub.s3.us-east-1.amazonaws.com/III/Flashback+FM.mp3" type="audio/mp3">
+            </audio>
+
         </div>
         <footer id="nowPlaying" class="hidden">
             <div class="footer-content">
@@ -81,12 +103,13 @@
                 <p id="playingTitle">Reproduciendo:</p>
                 <div id="progressBarContainer">
                     <div id="progressBar"></div>
+                    <div id="progressThumb"></div>
             </div>
+            <span id="timeCurrent">0:00</span>
         </footer>
         <script src="../assets/scripts/abrir menu.js"></script>
         <script src="../assets/scripts/header.js"></script>
-        <script src="../assets/scripts/now-playing.js"></script>
-        <script src="../assets/scripts/progressbar.js"></script>
+        <script src="../assets/scripts/radio.js"></script>
     </div>
 </body>
 </html>

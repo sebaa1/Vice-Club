@@ -56,61 +56,68 @@
                 </div>
             </nav>
         </header>
-        <h2>Radios de GTA LCS</h2>
+        <h2 class="radio-titulo" style="color: #ffffff">Radios de GTA LCS</h2>
         <div class="radio-container">
-            <h3>Head Radio</h3>
-            <img src="../assets/images/head_lcs.webp" style="width: 60px; height: 60px;">
-            <audio src="../assets/audio/headradio.mp3" controls></audio>
-        </div>
-        <div class="radio-container">
-            <h3>Double Clef FM</h3>
-            <img src="../assets/images/clef_lcs.webp" style="width: 60px; height: 55px; background-color: #98fcff;">
-            <audio src="../assets/audio/doublecleff.mp3" controls></audio>
-        </div>
-        <div class="radio-container">
-            <h3>K-JAH Radio</h3>
-            <img src="../assets/images/k-jah_lcs.webp" style="width: 60px; height: 55px; background-color: #98fcff;">
-            <audio src="../assets/audio/k-jah.mp3" controls></audio>
-        </div>
-        <div class="radio-container">
-            <h3>Rise FM</h3>
-            <img src="../assets/images/rise.webp" style="width: 60px; height: 55px; background-color: #ffffff;">
-            <audio src="../assets/audio/lips.mp3" controls></audio>
-        </div>
-        <div class="radio-container">
-            <h3>Lips 106</h3>
-            <img src="../assets/images/lips.webp" style="width: 60px; height: 55px; background-color: #98fcff;">
-            <audio src="../assets/audio/game fm.mp3" controls></audio>
-        </div>
-        <div class="radio-container">
-            <h3>Radio Del Mundo</h3>
-            <img src="../assets/images/rdm.webp" style="width: 60px; height: 55px; background-color: #c5b7e9;">
-            <audio src="../assets/audio/msx.mp3" controls></audio>
-        </div>
-        <div class="radio-container">
-            <h3>MSX 98</h3>
-            <img src="../assets/images/msx98.webp" style="width: 70px; height: 70px;">
-            <audio src="../assets/audio/flashback.mp3" controls></audio>
-        </div>
-        <div class="radio-container">
-            <h3>Flashback FM</h3>
-            <img src="../assets/images/flashback_lcs.webp" style="width: 70px; height: 70px;">
-            <audio src="../assets/audio/flashback.mp3" controls></audio>
-        </div>
-        <div class="radio-container">
-            <h3>The Liberty Jam</h3>
-            <img src="../assets/images/tlj.webp" style="width: 70px; height: 70px;">
-            <audio src="../assets/audio/flashback.mp3" controls></audio>
+
+            <img src="../assets/images/head_lcs.webp" class="portada" alt="Head Radio">
+            <audio class="song">
+                <source src="https://viceclub.s3.us-east-1.amazonaws.com/LCS/Head+Radio.mp3" type="audio/mp3">
+            </audio>
+
+            <img src="../assets/images/clef_lcs.webp" class="portada" alt="Double Clef FM">
+            <audio class="song">
+                <source src="https://viceclub.s3.us-east-1.amazonaws.com/LCS/Double+Clef+FM.mp3" type="audio/mp3">
+            </audio>
+
+            <img src="../assets/images/k-jah_lcs.webp" class="portada" alt="K-JAH Radio">
+            <audio class="song">
+                <source src="https://viceclub.s3.us-east-1.amazonaws.com/LCS/K-JAH+Radio.mp3" type="audio/mp3">
+            </audio>
+
+            <img src="../assets/images/rise.webp" class="portada" alt="Rise FM">
+            <audio class="song">
+                <source src="https://viceclub.s3.us-east-1.amazonaws.com/LCS/Rise+FM.mp3" type="audio/mp3">
+            </audio>
+
+            <img src="../assets/images/lips.webp" class="portada" alt="Lips 106">
+            <audio class="song">
+                <source src="https://viceclub.s3.us-east-1.amazonaws.com/LCS/Lips+106.mp3" type="audio/mp3">
+            </audio>
+
+            <img src="../assets/images/rdm.webp"class="portada" alt="Radio del Mundo">
+            <audio class="song">
+                <source src="https://viceclub.s3.us-east-1.amazonaws.com/LCS/Radio+Del+Mundo.mp3" type="audio/mp3">
+            </audio>
+
+            <img src="../assets/images/msx98.webp" class="portada" alt="MSX 98">
+            <audio class="song">
+                <source src="https://viceclub.s3.us-east-1.amazonaws.com/LCS/MSX+98.mp3" type="audio/mp3">
+            </audio>
+
+            <img src="../assets/images/flashback_lcs.webp" class="portada" alt="Flashback FM">
+            <audio class="song">
+                <source src="https://viceclub.s3.us-east-1.amazonaws.com/LCS/Flashback+FM.mp3" type="audio/mp3">
+            </audio>
+
+            <img src="../assets/images/tlj.webp" class="portada" alt="The Liberty Jam">
+            <audio class="song">
+                <source src="https://viceclub.s3.us-east-1.amazonaws.com/LCS/The+Liberty+Jam.mp3" type="audio/mp3">
+            </audio>
+
         </div>
         <footer id="nowPlaying" class="hidden">
             <div class="footer-content">
                 <img id="playingImage" src="" alt="Radio en reproducción">
                 <p id="playingTitle">Reproduciendo:</p>
+                <div id="progressBarContainer">
+                    <div id="progressBar"></div>
+                    <div id="progressThumb"></div>
             </div>
+            <span id="timeCurrent">0:00</span>
         </footer>
         <script src="../assets/scripts/abrir menu.js"></script>
         <script src="../assets/scripts/header.js"></script>
-        <script src="../assets/scripts/now-playing.js"></script>
+        <script src="../assets/scripts/radio.js"></script>
     </div>
 </body>
 </html>

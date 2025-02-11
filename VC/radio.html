@@ -58,20 +58,42 @@
         </header>
         <h2 class="radio-titulo">Radios de GTA VC</h2>
         <div class="radio-container">
-            <img src="../assets/images/wildstyle.webp" class="portada">
-            <audio src="../assets/audio/wildstyle.mp3" class="song"></audio>
-            <img src="../assets/images/flash.webp" class="portada">
-            <audio src="../assets/audio/flash.mp3" class="song"></audio>
-            <img src="../assets/images/fever.webp" class="portada">
-            <audio src="../assets/audio/fever.mp3" class="song"></audio>
-            <img src="../assets/images/v-rock.webp" class="portada">
-            <audio src="../assets/audio/v-rock.mp3"  class="song"></audio>
-            <img src="../assets/images/espantoso.webp" class="portada">
-            <audio src="../assets/audio/espantoso.mp3" class="song"></audio>
-            <img src="../assets/images/emotion.webp" class="portada">
-            <audio src="../assets/audio/emotion.mp3" class="song"></audio>
-            <img src="../assets/images/wave.webp" class="portada">
-            <audio src="../assets/audio/wave.mp3" class="song"></audio>
+
+            <img src="../assets/images/wildstyle.webp" class="portada" alt="Wildstyle Pirate Radio">
+            <audio class="song">
+                <source src="https://viceclub.s3.us-east-1.amazonaws.com/VC/Wildstyle+Pirate+Radio.mp3" type="audio/mp3">
+            </audio>
+
+            <img src="../assets/images/flash.webp" class="portada" alt="Flash FM">
+            <audio class="song">
+                <source src="https://viceclub.s3.us-east-1.amazonaws.com/VC/Flash+FM.mp3" type="audio/mp3">
+            </audio>
+
+            <img src="../assets/images/fever.webp" class="portada" alt="Fever 105">
+            <audio class="song">
+                <source src="https://viceclub.s3.us-east-1.amazonaws.com/VC/Fever+105.mp3" type="audio/mp3">
+            </audio>
+
+            <img src="../assets/images/v-rock.webp" class="portada" alt="V-Rock">
+            <audio class="song">
+                <source src="https://viceclub.s3.us-east-1.amazonaws.com/VC/V-Rock.mp3" type="audio/mp3">
+            </audio>
+
+            <img src="../assets/images/espantoso.webp" class="portada" alt="Radio Espantoso">
+            <audio class="song">
+                <source src="https://viceclub.s3.us-east-1.amazonaws.com/VC/Radio+Espantoso.mp3" type="audio/mp3">
+            </audio>
+
+            <img src="../assets/images/emotion.webp" class="portada" alt="Emotion 98.3">
+            <audio class="song">
+                <source src="https://viceclub.s3.us-east-1.amazonaws.com/VC/Emotion+98.3.mp3" type="audio/mp3">
+            </audio>
+
+            <img src="../assets/images/wave.webp" class="portada" alt="Wave 103">
+            <audio class="song">
+                <source src="https://viceclub.s3.us-east-1.amazonaws.com/VC/Wave+103.mp3" type="audio/mp3">
+            </audio>
+
         </div>
     <footer id="nowPlaying" class="hidden">
         <div class="footer-content">
@@ -79,12 +101,13 @@
             <p id="playingTitle">Reproduciendo:</p>
             <div id="progressBarContainer">
                 <div id="progressBar"></div>
+                <div id="progressThumb"></div>
             </div>
+            <span id="timeCurrent">0:00</span>
         </div>    
     </footer>
     <script src="../assets/scripts/abrir menu.js"></script>
     <script src="../assets/scripts/header.js"></script>
-    <script src="../assets/scripts/now-playing.js"></script>
-    <script src="../assets/scripts/progressbar.js"></script>
+    <script src="../assets/scripts/radio.js"></script>
 </body>
 </html>

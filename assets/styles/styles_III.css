@@ -86,13 +86,13 @@ abbr {
     background-color: #293561c4;
 }
 .radio-container img {
-    background-color: rgb(41, 9, 82);
+    background-color: #38737e;
 }
 .radio-container img:hover {
     background-image: linear-gradient( #3740b9fd, #00000075);
 }
 footer {
-    background: linear-gradient(#047ea3fd, #8f878dc9);
+    background: linear-gradient(#047ea3fd, #bba7b6f1);
 }
 footer p {
     color: #ffffff;
@@ -105,5 +105,8 @@ footer p {
     background-color: #ffffff;
 }
 #progressBar {
-    background-color: #250b63;
+    background-color: #3612bb;
+}
+#progressBarContainer:hover #progressThumb {
+    background: #162b3d;
 }

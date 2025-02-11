@@ -58,26 +58,37 @@
         </header>
         <h2 class="radio-titulo">Radios de GTA SA</h2>
         <div class="radio-container">
-        <img src="../assets/images/playback.webp" class="portada">
-        <audio src="../assets/audio/playback.mp3" class="song"></audio>
-        <img src="../assets/images/k-rose.webp" class="portada">
-        <audio src="../assets/audio/k-rose.mp3" class="song"></audio>
-        <img src="../assets/images/k-dst.webp" class="portada">
-        <audio src="../assets/audio/k-dst.mp3" class="song"></audio>
-        <img src="../assets/images/bounce.webp" class="portada">
-        <audio src="../assets/audio/bounce.mp3" class="song"></audio>
-        <img src="../assets/images/sfur.webp" class="portada">
-        <audio src="../assets/audio/sfur.mp3" class="song"></audio>
-        <img src="../assets/images/rls.webp" class="portada">
-        <audio src="../assets/audio/rls.mp3" class="song"></audio>
-        <img src="../assets/images/radio_x.webp" class="portada">
-        <audio src="../assets/audio/radio_x.mp3" class="song"></audio>
-        <img src="../assets/images/csr.webp" class="portada">
-        <audio src="../assets/audio/csr.mp3" class="song"></audio>
-        <img src="../assets/images/k-jah_w.webp" class="portada">
-        <audio src="../assets/audio/k-jah_w.mp3"class="song"></audio>
-        <img src="../assets/images/master.webp" class="portada">
-        <audio src="../assets/audio/master.mp3" class="song"></audio>
+
+        <img src="../assets/images/playback.webp" class="portada" alt="Playback FM">
+        <audio src="https://viceclub.s3.us-east-1.amazonaws.com/SA/Playback+FM.mp3" class="song"></audio>
+
+        <img src="../assets/images/k-rose.webp" class="portada" alt="K-Rose">
+        <audio src="https://viceclub.s3.us-east-1.amazonaws.com/SA/K-Rose.mp3" class="song"></audio>
+
+        <img src="../assets/images/k-dst.webp" class="portada" alt="K-DST">
+        <audio src="https://viceclub.s3.us-east-1.amazonaws.com/SA/K-DST.mp3" class="song"></audio>
+
+        <img src="../assets/images/bounce.webp" class="portada" alt="Bounce FM">
+        <audio src="https://viceclub.s3.us-east-1.amazonaws.com/SA/Bounce+FM.mp3" class="song"></audio>
+
+        <img src="../assets/images/sfur.webp" class="portada" alt="SF-UR">
+        <audio src="https://viceclub.s3.us-east-1.amazonaws.com/SA/SF-UR.mp3" class="song"></audio>
+
+        <img src="../assets/images/rls.webp" class="portada" alt="Radio Los Santos">
+        <audio src="https://viceclub.s3.us-east-1.amazonaws.com/SA/Radio+Los+Santos.mp3" class="song"></audio>
+
+        <img src="../assets/images/radio_x.webp" class="portada" alt="Radio X">
+        <audio src="https://viceclub.s3.us-east-1.amazonaws.com/SA/Radio+X.mp3" class="song"></audio>
+
+        <img src="../assets/images/csr.webp" class="portada" alt="CSR 103.9">
+        <audio src="https://viceclub.s3.us-east-1.amazonaws.com/SA/CSR+103.9.mp3" class="song"></audio>
+
+        <img src="../assets/images/k-jah_w.webp" class="portada" alt="K-JAH West">
+        <audio src="https://viceclub.s3.us-east-1.amazonaws.com/SA/K-JAH+West.mp3"class="song"></audio>
+
+        <img src="../assets/images/master.webp" class="portada" alt="Master Sounds 98.3">
+        <audio src="https://viceclub.s3.us-east-1.amazonaws.com/SA/Master+Sounds+98.3.mp3" class="song"></audio>
+
         </div>
         <footer id="nowPlaying" class="hidden">
             <div class="footer-content">
@@ -85,12 +96,13 @@
                 <p id="playingTitle">Reproduciendo:</p>
                 <div id="progressBarContainer">
                     <div id="progressBar"></div>
+                    <div id="progressThumb"></div>
             </div>
+            <span id="timeCurrent">0:00</span>
         </footer>
         <script src="../assets/scripts/abrir menu.js"></script>
         <script src="../assets/scripts/header.js"></script>
-        <script src="../assets/scripts/now-playing.js"></script>
-        <script src="../assets/scripts/progressbar.js"></script>
+        <script src="../assets/scripts/radio.js"></script>
     </div>
 </body>
 </html>

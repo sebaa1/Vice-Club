@@ -4,7 +4,7 @@
 }
 body::before {
     background-image: url(../images/fondo_iv.webp);
-    filter: blur(10px);
+    filter: blur(9px);
 }
 body {
     color: white;
@@ -84,5 +84,30 @@ abbr {
     color:#2c2c2cf4;
 }
 .container {
-    background-color: #111210c6;
+    background-color: #111210dc;
+}
+.radio-container img {
+    background-color: #3c3f3f;
+}
+.radio-container img:hover {
+    background-image: linear-gradient( #fffffffd, #00000075);
+}
+footer {
+    background: linear-gradient(#fefefffd, #31292fe8);
+}
+footer p {
+    color: #000000;
+}
+#playingImage {
+    border: 3px solid #717579;
+    background-color: #ffffff;
+}
+#progressBarContainer {
+    background-color: #ffffff;
+}
+#progressBar {
+    background-color: #5a5858;
+}
+#progressBarContainer:hover #progressThumb {
+    background: #000000;
 }

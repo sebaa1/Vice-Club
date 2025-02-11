@@ -73,5 +73,30 @@ abbr {
     color: #c533cffc;
 }
 .container {
-    background-color: #fb58fb8c;
+    background-color: #fb58fbd7;
+}
+.radio-container img {
+    background-color: #9c5bda;
+}
+.radio-container img:hover {
+    background-image: linear-gradient( #77d1f5fd, #00000075);
+}
+footer {
+    background: linear-gradient(#ff3bbefd, #acacace8);
+}
+footer p {
+    color: #000000;
+}
+#playingImage {
+    border: 3px solid #fc076d;
+    background-color: #ffffff;
+}
+#progressBarContainer {
+    background-color: #ffffff;
+}
+#progressBar {
+    background-color: #700559;
+}
+#progressBarContainer:hover #progressThumb {
+    background: #dd53cb;
 }

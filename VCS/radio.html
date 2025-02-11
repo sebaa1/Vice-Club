@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="../assets/styles/styles_VCS.css">
     <link rel="stylesheet" href="../assets/styles/main.css">
     <link rel="icon" type="image/webp" href="../assets/images/header.webp">
-    <title>VCs - Radio | Vice Club</title>
+    <title>VCS - Radio | Vice Club</title>
 </head>
 <body>
     <div class="container">
@@ -56,56 +56,63 @@
                 </div>
             </nav>
         </header>
-        <h2>Radios de GTA VCS</h2>
+        <h2 class="radio-titulo">Radios de GTA VCS</h2>
         <div class="radio-container">
-            <h3>Flash FM</h3>
-            <img src="../assets/images/wildstyle.webp" style="width: 80px; height: 55px;">
-            <audio src="../assets/audio/wildstyle.mp3" controls></audio>
-        </div>
-        <div class="radio-container">
-            <h3>V-Rock</h3>
-            <img src="../assets/images/fever.webp" style="width: 60px; height: 50px;">
-            <audio src="../assets/audio/fever.mp3" controls></audio>
-        </div>
-        <div class="radio-container">
-            <h3>Paradise FM</h3>
-            <img src="../assets/images/v-rock.webp" style="width: 70px; height: 70px;">
-            <audio src="../assets/audio/v-rock.mp3" controls></audio>
-        </div>
-        <div class="radio-container">
-            <h3>VCFL</h3>
-            <img src="../assets/images/espantoso.webp" style="width: 70px; height: 55px;">
-            <audio src="../assets/audio/espantoso.mp3" controls></audio>
-        </div>
-        <div class="radio-container">
-            <h3>Wave 103</h3>
-            <img src="../assets/images/emotion.webp" style="width: 120px; height: 50px;">
-            <audio src="../assets/audio/emotion.mp3" controls></audio>
-        </div>
-        <div class="radio-container">
-            <h3>Fresh FM</h3>
-            <img src="../assets/images/wave.webp" style="width: 100px; height: 50px;">
-            <audio src="../assets/audio/wave.mp3" controls></audio>
-        </div>
-        <div class="radio-container">
-            <h3>Radio Espantoso</h3>
-            <img src="../assets/images/wave.webp" style="width: 100px; height: 50px;">
-            <audio src="../assets/audio/wave.mp3" controls></audio>
-        </div>
-        <div class="radio-container">
-            <h3>Emotion 98.3</h3>
-            <img src="../assets/images/wave.webp" style="width: 100px; height: 50px;">
-            <audio src="../assets/audio/wave.mp3" controls></audio>
+
+            <img src="../assets/images/flash.webp" class="portada" alt="Flash FM">
+            <audio class="song">
+                <source src="https://viceclub.s3.us-east-1.amazonaws.com/VCS/Flash+FM.mp3" type="audio/mp3">
+            </audio>
+
+            <img src="../assets/images/v-rock.webp" class="portada" alt="V-Rock">
+            <audio class="song">
+                <source src="https://viceclub.s3.us-east-1.amazonaws.com/VCS/V-Rock.mp3" type="audio/mp3">
+            </audio>
+
+            <img src="../assets/images/paradise.webp" class="portada" alt="Paradise FM">
+            <audio class="song">
+                <source src="https://viceclub.s3.us-east-1.amazonaws.com/VCS/Paradise+FM.mp3" type="audio/mp3">
+            </audio>
+
+            <img src="../assets/images/vcfl.webp" class="portada" alt="VCFL">
+            <audio class="song">
+                <source src="https://viceclub.s3.us-east-1.amazonaws.com/VCS/VCFL.mp3" type="audio/mp3">
+            </audio>
+
+            <img src="../assets/images/wave.webp" class="portada" alt="Wave 103">
+            <audio class="song">
+                <source src="https://viceclub.s3.us-east-1.amazonaws.com/VCS/Wave+103.mp3" type="audio/mp3">
+            </audio>
+
+            <img src="../assets/images/fresh.webp" class="portada" alt="Fresh 105 FM">
+            <audio class="song">
+                <source src="https://viceclub.s3.us-east-1.amazonaws.com/VCS/Fresh+105+FM.mp3" type="audio/mp3">
+            </audio>
+
+            <img src="../assets/images/espantoso_vcs.webp" class="portada" alt="Radio Espantoso">
+            <audio class="song">
+                <source src="https://viceclub.s3.us-east-1.amazonaws.com/VCS/Radio+Espantoso.mp3" type="audio/mp3">
+            </audio>
+
+            <img src="../assets/images/emotion.webp" class="portada" alt="Emotion 98.3">
+            <audio class="song">
+                <source src="https://viceclub.s3.us-east-1.amazonaws.com/VCS/Emotion+98.3.mp3" type="audio/mp3">
+            </audio>
+
         </div>
         <footer id="nowPlaying" class="hidden">
             <div class="footer-content">
                 <img id="playingImage" src="" alt="Radio en reproducción">
                 <p id="playingTitle">Reproduciendo:</p>
+                <div id="progressBarContainer">
+                    <div id="progressBar"></div>
+                    <div id="progressThumb"></div>
             </div>
+            <span id="timeCurrent">0:00</span>
         </footer>
         <script src="../assets/scripts/abrir menu.js"></script>
         <script src="../assets/scripts/header.js"></script>
-        <script src="../assets/scripts/now-playing.js"></script>
+        <script src="../assets/scripts/radio.js"></script>
     </div>
 </body>
 </html>

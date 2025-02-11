@@ -2,6 +2,10 @@
     font-family: "Guanine";
     src: url("../fonts/Guanine.otf");
 }
+@font-face {
+    font-family: "Chalet";
+    src: url("../fonts/Chalet.otf");
+}
 body::before {
     background-image: url(../images/fondo_v.webp);
     filter: blur(10px);
@@ -65,4 +69,29 @@ abbr {
 }
 .container {
     background-color: #42b74ca7;
+}
+.radio-container img {
+    background-color: #034b1b;
+}
+.radio-container img:hover {
+    background-image: linear-gradient( #257941fd, #00000075);
+}
+footer {
+    background: linear-gradient(#98d6a5fd, #1f1e1fc9);
+}
+footer p {
+    color: #ffffff;
+}
+#playingImage {
+    border: 3px solid #98f19f;
+    background-color: #ffffff;
+}
+#progressBarContainer {
+    background-color: #ffffff;
+}
+#progressBar {
+    background-color: #6fe44c;
+}
+#progressBarContainer:hover #progressThumb {
+    background: #4e7505;
 }

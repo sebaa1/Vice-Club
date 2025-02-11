@@ -68,5 +68,31 @@ abbr {
     color: #de2b2bfc;
 }
 .container {
-    background-color: #7f090976;
+    background-color: #852121b2;
+}
+.radio-container {
+    grid-template-columns: repeat(3, 240px) !important;
+    gap: 60px !important;
+}
+.radio-container img {
+    background-color: #630400;
+}
+.radio-container img:hover {
+    background-image: linear-gradient( #be3921fd, #00000007);
+}
+footer {
+    background: linear-gradient(#e62208fd, #8f878dc9);
+}
+footer p {
+    color: #ffffff;
+}
+#playingImage {
+    border: 3px solid #052e50;
+    background-color: #ffffff;
+}
+#progressBarContainer {
+    background-color: #ffffff;
+}
+#progressBar {
+    background-color: #3d0303;
 }
