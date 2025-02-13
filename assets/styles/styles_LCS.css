@@ -4,18 +4,25 @@
 }
 body::before {
     background-image: url(../images/fondo_lcs.webp);
-    filter: blur(3px);
+    filter: blur(10px);
 }
-h1 {
-    color: #e7c4df;
-    text-shadow: -1px -1px 0 #8f0571;
-}
-h4 {
+h2 {
     color: #e81b25;
-    text-shadow: 3px 3px 0 #191616;
+    text-shadow: 3px 3px 0 #040401;
+}
+h2, h3 {
+    font-family: "Eurostyle";
+}
+.trucos h3, .trucos-active h3 {
+    color: #e8a701;
+    text-decoration: underline;
+    text-shadow: 3px 3px 0 #040401;
+}
+.trucos ul {
+    background-color: #6166ac11;
 }
 .header {
-    background-image: linear-gradient(360deg,#a53036, #cca0a0);
+    background-image: linear-gradient(360deg,#a53036, #d66a6a);
 }
 .header-img {
     filter: drop-shadow(0px 0px 10px #ee0000);
@@ -27,8 +34,8 @@ h4 {
     background-color: #ffffff;
 }
 .menu-content {
-    background-color: #3d2727e0;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color: #663838e0;
+    box-shadow: 0px 8px 16px 0px #00000033;
 }
 .menu-content a {
     color: #ffffff;
@@ -38,26 +45,26 @@ h4 {
     color: #e81b25;
 }
 .dropdown-content {
-    background-color: rgba(95, 89, 89, 0.891);
+    background-color: #795555e3;
     box-shadow: 0px 8px 16px 0px #e27171;
 }
 .anchor, .anchor:visited {
-    color: #e81b25;
+    color: #f5b2b5;
     text-shadow: 3px 3px 0 #191616;
 }
 .ficha-tecnica {
     border: 3px solid #000000;
-    background-color: #f89e9e;
+    background-color: #f39494;
 }
 .ficha-tecnica h2 {
     color: #b10a0a;
-    text-shadow: 3px 3px 0 #040401;
+    text-shadow: 1px 2px 2px #040401;
 }
 .ficha-tecnica td, .ficha-tecnica th {
     border-top: 1px solid #000000;
 }
 .ficha-tecnica th {
-    border-right: 1px solid #000000;
+    border-right: 4px solid #750000;
     background-color: #e16464;
 }
 .ficha-tecnica .titulo {
@@ -68,7 +75,7 @@ abbr {
     color: #de2b2bfc;
 }
 .container {
-    background-color: #852121b2;
+    background-color: #943f3fe7;
 }
 .radio-container {
     grid-template-columns: repeat(3, 240px) !important;
@@ -81,13 +88,13 @@ abbr {
     background-image: linear-gradient( #be3921fd, #00000007);
 }
 footer {
-    background: linear-gradient(#e62208fd, #8f878dc9);
+    background: linear-gradient(#f87867fd, #722f2fe5);
 }
-footer p {
+footer p, #timeCurrent {
     color: #ffffff;
 }
 #playingImage {
-    border: 3px solid #052e50;
+    border: 3px solid #000000;
     background-color: #ffffff;
 }
 #progressBarContainer {
@@ -95,4 +102,13 @@ footer p {
 }
 #progressBar {
     background-color: #3d0303;
+}
+.menu {
+    border: 4px solid #77728f;
+    background-color: #b4adad2f;
+    box-shadow: 0 0 30px #68656e9f;
+}
+.imagen-plataforma img {
+    border: 4px solid #0c0c0c;
+    background-color: #1ad8e61a;
 }

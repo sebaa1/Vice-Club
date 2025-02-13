@@ -7,15 +7,22 @@ body::before {
     filter: blur(9px);
 }
 body {
-    color: white;
+    color: #ffffff;
 }
-h1 {
-    color: #000000;
-    text-shadow: 2px 2px 4px #ddd;
-}
-h4 {
+h2 {
     color: #b2b2b2;
     text-shadow: 3px 3px 0 #000000;
+}
+h2, h3 {
+    font-family: "Helvetica Neue Heavy";
+}
+.trucos h3, .trucos-active h3 {
+    color: #e8a701;
+    text-decoration: underline;
+    text-shadow: 3px 3px 0 #040401;
+}
+.trucos ul {
+    background-color: #6166ac11;
 }
 .header {
     background-image: linear-gradient(150deg, #9fa5a6, #1b1616);
@@ -34,11 +41,11 @@ h4 {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 .menu-content a {
-    color: #ffffff;
+    color: #6b6666;
     font-family: "Helvetica Neue Heavy";
 }
 .menu-content a.active {
-    color: #898383;
+    color: #ffffff;
 }
 .dropdown-content {
     background-color: #5a5a5ad9;
@@ -70,14 +77,14 @@ h4 {
     text-shadow: 3px 3px 4px #d9d9d9;
 }
 .ficha-tecnica td, .ficha-tecnica th {
-    border-bottom: 1px solid #420118;
+    border-top: 1px solid #000000;
 }
 .ficha-tecnica th {
-    border-right: 1px solid #420118;
+    border-right: 4px solid #ebd8df;
     background-color: #353535;
 }
 .ficha-tecnica .titulo {
-    color: #0a0808;
+    color: #000000;
 }
 abbr {
     font-family: "Helvetica Neue Heavy";

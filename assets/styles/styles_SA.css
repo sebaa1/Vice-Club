@@ -6,14 +6,21 @@ body::before {
     background-image: url(../images/fondo_sa.webp);
     filter: blur(5px);
 }
-h1 {
+h2 {
     color: #61bb17;
-    text-shadow: -1px -1px 0 #232121;
+    text-shadow: 3px 3px 0 #232121;
 }
-h4 {
-    font-family: "Guanine";
-    color: #7df38e;
-    text-shadow: 3px 3px 0 #000000;
+h2, h3 {
+    font-family: "Bank Gothic";
+}
+.trucos h3, .trucos-active h3 {
+    color: #61bb17;
+    text-decoration: underline;
+    text-shadow: 3px 3px 0 #040401;
+}
+.trucos ul {
+    background-color: #61b96644;
+    width: 900px !important;
 }
 .header {
     background-image: linear-gradient(177deg, #12ee84, #2d7114);
@@ -28,73 +35,77 @@ h4 {
     background-color: #faf6f6;
 }
 .menu-content {
-    background-color: #135519dd;
+    background-color: #135519ec;
 }
 .menu-content a {
     color: #ffffff;
     font-family: "Bank Gothic";
+    font-size: 1rem;
 }
 .menu-content a.active {
-    color: #55b72b;
+    color: #52f10e;
 }
 .dropdown-content {
     background-color: rgba(60, 131, 74, 0.85);
     box-shadow: 0px 8px 16px 0px #1b4c0d;
 }
 .anchor, .anchor:visited {
-    color: #eb6b09;
+    color: #f19e03;
     text-shadow: 3px 3px 0 #000000;
-}
-.trucos h2, .trucos-active h2 {
-    color: #278e05;
-}
-.trucos h3, .trucos-active h3 {
-    color: #000000;
 }
 .ficha-tecnica {
     border: 3px solid #000000;
-    background-color: #189022;
+    background-color: #42ad48;
 }
 .ficha-tecnica h2 {
-    color: #0f0b0b;
-    text-shadow: 3px 3px 0 #77ff97;
+    color: #08441a;
+    text-shadow: 3px 3px 2px #95dd99;
 }
 .ficha-tecnica td, .ficha-tecnica th {
-    border-bottom: 1px solid #420118;
+    border-top: 1px solid #042c00d7;
 }
 .ficha-tecnica th {
-    border-right: 1px solid #420118;
+    border-right: 3px solid #055a1abe;
     background-color: #56c14e;
 }
 .ficha-tecnica .titulo {
-    color: #80ef6e;
+    color: #272926;
 }
 abbr {
     font-family: "Bank Gothic";
-    color:#6dff41;
+    color:#9dff2d;
 }
 .container {
-    background-color: #67ee77ad;
+    background-color: #a2f0abce;
 }
 .radio-container img {
-    background-color: rgb(0, 0, 0);
+    background-color: #000000;
 }
 .radio-container img:hover {
-    background-image: linear-gradient( #0b0b0cfd, #0c1b0e75);
+    background-image: linear-gradient( #0b0b0cfd, #0f3b15b0);
 }
 footer {
-    background: linear-gradient(#047ea3fd, #8f878dc9);
+    background: linear-gradient(#05b10ec9, #000000be);
 }
-footer p {
+footer p, #timeCurrent {
     color: #ffffff;
 }
 #playingImage {
-    border: 3px solid #052e50;
-    background-color: #ffffff;
+    border: 3px solid #32ff1f;
+    background-color: #000000;
 }
 #progressBarContainer {
     background-color: #ffffff;
 }
 #progressBar {
-    background-color: #250b63;
+    background-color: #5ad621;
+}
+.menu {
+    border: 4px solid #63b44ace;
+    background-color: #12e60b2f;
+    box-shadow: 0 0 30px #3180299f;
+}
+.imagen-plataforma img {
+    border: 4px solid #0c0c0c;
+    background-color: #055e0a38;
 }

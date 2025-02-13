@@ -10,7 +10,8 @@ body::before {
     color: #ea8ed5;
     text-shadow: -1px -2px 0 #000000;
     margin-top: -4px;
-    font-size: 2.7rem
+    font-size: 2.7rem;
+    text-align: center
 }
 .block h2 {
     text-align: left;
@@ -68,16 +69,16 @@ body::before {
     border: 3px solid #e64abf;
 }
 .line {
-    background-color: #5c2d66;
+    background-color: #f300a2;
 }
 .menu-content {
-    background-color: #eb84ebf8;
+    background-color: #c984c9cb;
 }
 .menu-content a {
-    color: #800080;
+    color: #fdfdfd;
 }
 .menu-content a.active {
-    color:#ffffff;
+    color:#520f4e;
 }
 .dropdown-content {
     background-color: rgba(64, 41, 66, 0.829);

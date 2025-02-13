@@ -71,17 +71,11 @@
     }
 }
 @font-face {
-    font-family: "Helvetica";
-    src: url("../fonts/Helvetica.otf");
-}
-@font-face {
     font-family: "Guanine";
     src: url("../fonts/Guanine.otf");
 }
 * {
-    font-family: "Helvetica";
-    position: relative;
-    font-size: 1rem
+    font-family: "Noto Sans";
 }
 body::before {
     content: "";
@@ -98,16 +92,9 @@ body::before {
 body {
     margin-top: 80px;
 }
-h1 {
-    font-size: 3rem;
+h2 {
+    font-size: 2.2rem;
     text-align: center;
-}
-h4 {
-    font-size: 2.5rem;
-    font-family: "Guanine";
-    margin: 0;
-    text-align: center;
-    white-space: nowrap;
 }
 .navbar {
     display: flex;
@@ -155,7 +142,7 @@ h4 {
     position: absolute;
     right: 0;
     top: 100%;
-    padding: 1.5rem;
+    padding: 1.2rem;
     z-index: 1000;
     border-radius: 12px;
     border: 3px solid #000000;
@@ -218,21 +205,55 @@ h4 {
 }
 .trucos {
     display: none;
+    margin-left: 40px;
 }
 .trucos.active {
     display: block;
-    margin-left: 40px;
+}
+.trucos h3 {
+    font-size: 1.7rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.trucos ul {
+    border-radius: 20px;
+    width: 800px;
+}
+.trucos li:first-child {
+    padding-top: 20px;
+}
+.trucos li:last-child {
+    padding-bottom: 20px;
+}
+.trucos li {
+    margin: 20px 0;
+}
+.trucos h4 {
+    margin-bottom: -15px;
+}
+#pc span {
+    border: 2px solid;
+    padding: 2px;
+    margin-right: 10px;
 }
 .menu {
-    margin-left: 20px
+    border-radius: 15px;
+    padding: 20px;
+    width: fit-content;
+    margin: 40px auto;
 }
-.trucos h2, .trucos-active h2 {
-    font-size: 1.1rem;
-    font-weight: bold;
-    text-decoration: underline;
+.imagen-plataforma {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
 }
-.trucos h3, .trucos-active h3 {
-    font-size: 1.3rem;
+.imagen-plataforma img {
+    border-radius: 50px;
+    width: 60px;
+    height: 60px;
+}
+.plataforma:hover {
+    cursor: pointer;
 }
 .ficha-tecnica {
     justify-self: end;
@@ -269,6 +290,9 @@ h4 {
     margin-bottom: 10px;
     margin-left: 10px;
     font-weight: bold;
+}
+.ficha-tecnica td:first-child {
+    border-top: none;
 }
 abbr {
     font-size: 0.8rem;
@@ -308,8 +332,8 @@ li {
     justify-content: center;
 }
 .radio-container img {
-    width: 200px;
-    height: 200px;
+    width: 130px;
+    height: 130px;
     padding: 20px 13px;
     border: 4px solid;
     border-radius: 20px;
@@ -320,7 +344,7 @@ li {
     cursor: pointer;
 }
 audio {
-    display:none
+    display: none
 }
 footer {
     height: 70px;
@@ -330,6 +354,7 @@ footer {
     position: fixed;
     bottom: 0;
     left: 0;
+    border-top: 3px solid #000000;
 }
 footer img {
     width: 50px;

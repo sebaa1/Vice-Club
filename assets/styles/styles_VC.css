@@ -6,14 +6,24 @@ body::before {
     background-image: url(../images/fondo_vc.webp);
     filter: blur(10px);
 }
-h1 {
+h2 {
     color: #f900aa;
     text-shadow: -1px -1px 0 #232121;
 }
-h4 {
-    font-family: "Guanine";
-    color: #00ffeb;
-    text-shadow: 3px 3px 0 #000000;
+h2, h3 {
+    font-family: "Arborcrest";
+}
+.trucos h3, .trucos-active h3 {
+    color: #f900aa;
+    text-decoration: underline;
+    text-shadow: 3px 3px 3px #040401;
+}
+.trucos ul {
+    background-color: #a138e78f;
+}
+#pc span {
+    border-color: #ffffff;
+    color:#ffffff
 }
 .header {
     background-image: linear-gradient(45deg, #dc6ec4, #8749b4);
@@ -33,38 +43,33 @@ h4 {
 .menu-content a {
     color: #000000;
     font-family: "Arborcrest";
+    font-size: 1rem;
 }
 .menu-content a.active {
     color: #00ffea;
 }
 .dropdown-content {
-    background-color: rgba(130, 45, 138, 0.85);
+    background-color: #822d8ad9;
     box-shadow: 0px 8px 16px 0px #dba8ff;
 }
 .anchor, .anchor:visited {
     color: #00ffeb;
     text-shadow: 3px 3px 0 #000000;
 }
-.trucos h2, .trucos-active h2 {
-    color: #8e055a;
-}
-.trucos h3, .trucos-active h3 {
-    color: #000000;
-}
 .ficha-tecnica {
     border: 3px solid #000000;
-    background-color: #f89ed9;
+    background-color: #e06deb;
 }
 .ficha-tecnica h2 {
-    color: #0f0b0b;
-    text-shadow: 3px 3px 0 #ff0ab5;
-}
-.ficha-tecnica td, .ficha-tecnica th {
-    border-bottom: 1px solid #420118;
+    color: #ff0ab5;
+    text-shadow: 3px 3px 2px #0f0b0b;
 }
 .ficha-tecnica th {
-    border-right: 1px solid #420118;
+    border-right: 3px solid #000000;
     background-color: #f93aa9;
+}
+.ficha-tecnica td, .ficha-tecnica th {
+    border-top: 1px solid #000000d8;
 }
 .ficha-tecnica .titulo {
     color: #f92cb8;
@@ -77,7 +82,7 @@ abbr {
     background-color: #ae35f9c1;
 }
 .radio-container img {
-    background-color: rgb(235, 163, 241);
+    background-color: #eba3f1;
 }
 .radio-container img:hover {
     background-image: linear-gradient( #f77edcfd, #00000075);
@@ -94,4 +99,13 @@ footer {
 }
 #progressBar {
     background-color: #000000;
+}
+.menu {
+    border: 4px solid #ac2f91ce;
+    background-color: #e60b922f;
+    box-shadow: 0 0 30px #68656e9f;
+}
+.imagen-plataforma img {
+    border: 4px solid #0c0c0c;
+    background-color: #e61ad538;
 }

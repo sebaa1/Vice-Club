@@ -7,15 +7,22 @@ body::before {
     filter: blur(10px);
 }
 body {
-    color: white;
+    color: #ffffff;
 }
-h1 {
+h2 {
     color: #e8a701;
     text-shadow: 3px 3px 0 #040401;
 }
-h4 {
+h2, h3 {
+    font-family: "Arial Black Italic";
+}
+.trucos h3, .trucos-active h3 {
     color: #e8a701;
+    text-decoration: underline;
     text-shadow: 3px 3px 0 #040401;
+}
+.trucos ul {
+    background-color: #6166ac11;
 }
 .header {
     background-image: linear-gradient(45deg, #212642, #6a838f);
@@ -31,7 +38,7 @@ h4 {
 }
 .menu-content {
     background-color: #20193adc;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px #00000033;
 }
 .menu-content a {
     color: #ffffff;
@@ -41,18 +48,12 @@ h4 {
     color: #e8a701;
 }
 .dropdown-content {
-    background-color: rgba(41, 53, 66, 0.85);
+    background-color: #293542d9;
     box-shadow: 0px 8px 16px 0px #fff70033;
 }
 .anchor, .anchor:visited {
     color: #e8a701;
     text-shadow: 3px 3px 0 #040401;
-}
-.trucos h2, .trucos-active h2 {
-    color: #e8a701;
-}
-.trucos h3, .trucos-active h3 {
-    color: #ffffff;
 }
 .ficha-tecnica {
     border: 3px solid #000000;
@@ -63,10 +64,10 @@ h4 {
     text-shadow: 3px 3px 0 #040401;
 }
 .ficha-tecnica td, .ficha-tecnica th {
-    border-top: 1px solid #ffffff;
+    border-top: 1px solid #ffffffd8;
 }
 .ficha-tecnica th {
-    border-right: 1px solid #a5c5f5;
+    border-right: 4px solid #a5c5f5e0;
     background-color: #130b41;
 }
 .ficha-tecnica .titulo {
@@ -74,16 +75,16 @@ h4 {
 }
 abbr {
     font-family: "Arial Black Italic";
-    color:#fff700f4;
+    color:#e8a701;
 }
 .dma:hover {
     cursor: help;
 }
 .dma, abbr {
-    text-decoration: underline dotted #eaff00;
+    text-decoration: underline dotted #e8a701;
 }
 .container {
-    background-color: #293561c4;
+    background-color: #293561d5;
 }
 .radio-container img {
     background-color: #38737e;
@@ -92,7 +93,7 @@ abbr {
     background-image: linear-gradient( #3740b9fd, #00000075);
 }
 footer {
-    background: linear-gradient(#047ea3fd, #bba7b6f1);
+    background: #0a1f25cc;
 }
 footer p {
     color: #ffffff;
@@ -109,4 +110,16 @@ footer p {
 }
 #progressBarContainer:hover #progressThumb {
     background: #162b3d;
+}
+#timeCurrent {
+    color: #fff;
+}
+.menu {
+    border: 4px solid #77728f;
+    background-color: #b4adad2f;
+    box-shadow: 0 0 30px #68656e9f;
+}
+.imagen-plataforma img {
+    border: 4px solid #0c0c0c;
+    background-color: #1ad8e61a;
 }

@@ -1,18 +1,14 @@
-document.getElementById('plataforma').addEventListener('change', function () {
+document.querySelector('.menu').addEventListener('click', function (event) {
+  if (event.target.classList.contains('plataforma')) {
+      const plataformaSeleccionada = event.target.getAttribute('data-plataforma');
 
-    const secciones = document.querySelectorAll('.trucos');
-  
-    secciones.forEach(seccion => {
-      seccion.classList.remove('active');
-    });
-  
+      document.querySelectorAll('.trucos').forEach(seccion => {
+          seccion.classList.remove('active');
+      });
 
-    const plataformaSeleccionada = this.value;
-  
-
-    const trucoActivo = document.getElementById(plataformaSeleccionada);
-    if (trucoActivo) {
-      trucoActivo.classList.add('active');
-    }
-  });
-  
+      const trucoActivo = document.getElementById(plataformaSeleccionada);
+      if (trucoActivo) {
+          trucoActivo.classList.add('active');
+      }
+  }
+});

@@ -6,13 +6,12 @@ body::before {
     background-image: url(../images/fondo_vcs.webp);
     filter: blur(10px);
 }
-h1 {
-    color: #e7c4df;
-    text-shadow: -1px -1px 0 #8f0571;
-}
-h4 {
+h2 {
     color: #b55582;
     text-shadow: 3px 3px 0 #040403;
+}
+h2, h3 {
+    font-family: "Geneva";
 }
 .header {
     background-image: linear-gradient(90deg, #be52a1, #9bcaff);
@@ -21,13 +20,13 @@ h4 {
     filter: drop-shadow(0px 0px 10px #f28dcb);
 }
 .hamburger {
-    border: 3px solid #ce0ee7;
+    border: 3px solid #020202;
 }
 .line {
-    background-color: #f80bd9;
+    background-color: #f505d5;
 }
 .menu-content {
-    background-color: #810543db;
+    background-color: #971d5adb;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 .menu-content a {
@@ -38,11 +37,11 @@ h4 {
     color: #ef74f3;
 }
 .dropdown-content {
-    background-color: rgba(161, 59, 170, 0.85);
+    background-color: #a13baad9;
     box-shadow: 0px 8px 16px 0px #3bbff3;
 }
 .anchor, .anchor:visited {
-    color: #b55582;
+    color: #d42e7c;
     text-shadow: 3px 3px 0 #040403;
 }
 .trucos h2, .trucos-active h2 {
@@ -51,19 +50,22 @@ h4 {
 .trucos h3, .trucos-active h3 {
     color: #ffffff;
 }
+.trucos ul {
+    background-color: #6166ac11;
+}
 .ficha-tecnica {
     border: 3px solid #000000;
-    background-color: #f89ed9;
+    background-color: #fd8bd5;
 }
 .ficha-tecnica h2 {
-    color: #050303;
+    color: #eb3ab6;
 }
 .ficha-tecnica td, .ficha-tecnica th {
     border-top: 1px solid #000000;
 }
 .ficha-tecnica th {
-    background-color: #e3c1e2;
-    border-right: 1px solid #000000;
+    background-color: #e994e6;
+    border-right: 4px solid #660047;
 }
 .ficha-tecnica .titulo {
     color: #4c0e43;
@@ -89,7 +91,7 @@ footer p {
 }
 #playingImage {
     border: 3px solid #fc076d;
-    background-color: #ffffff;
+    background-color: #f0db81;
 }
 #progressBarContainer {
     background-color: #ffffff;
