@@ -1,39 +1,52 @@
 @media screen and (max-width: 425px) {
     body {
-        padding: 0 10px;
+        width: 400px;
     }
-    h1 {
-        font-size: 2rem;
+    .text-container h2 {
+        font-size: 17px;
+    }
+    .text-container p, .text-container ul{
+        font-size: 14px;
+    }
+    .text-container {
+        flex: 1;
+        padding: 15px;
+        margin: 0 !important;
     }
     .header {
-        height: 60px;
-        padding: 0 10px;
-        border-bottom: 2px solid black;
+        height: 60px !important;
+        border-bottom: 2px solid #000000;
     }
-    .header-img {
-        max-width: 50px;
+    .header a, .header h1 {
+        font-size: 30px;
+        margin: 0 !important;
+        height: 40px
+    }
+    .header img {
+        width: 50px;
+        height: 50px;
+    }
+    .header .hamburger{
+        width: 10px;
+        height: 20px;
+    }
+    .dropdown-content {
+        height: 80px;
+        top: 12% !important
+    }
+    .dropdown-content img {
+        height: 40px !important;
+        height: 40px !important;
     }
     .hamburger {
-        padding: 0.3rem;
-    }
-    .menu-content {
-        width: 100%;
-        text-align: center;
-        margin: 10px;
-    }
-    .menu-content ul {
-        padding: 0;
-    }
-    .menu-content li {
-        padding: 8px 0;
+        align-items: center !important;
+        width: 40px !important;
+        height: 40px !important;
+        margin: 0 !important;
     }
     .ficha-tecnica {
-        width: 60%;
-        max-width: 100px;
-    }
-    .ficha-tecnica h2 {
-        font-size: 1.1rem !important;
-        margin-bottom: -10px !important; 
+        max-height: 900px !important;
+        max-width: 90px !important;
     }
     .ficha-tecnica li, .ficha.tecnica th {
         font-size: 0.8rem !important;
@@ -41,13 +54,17 @@
     .ficha-tecnica td, .ficha-tecnica th {
         border-top: 1px transparent !important;
     }
+    .ficha-tecnica th, .tabla td {
+        max-width: 80px !important;
+        font-size: 0.7rem !important;
+    }
     .ficha-tecnica .portada img {
-        transform: scale(0.8);
-        transform: scaleY(0.7);
+        width: 90px !important;
+        height: 120px !important;
+        margin: 0 !important;
     }
     .ficha-tecnica table {
-        width: 90%;
-        margin: 0 auto;
+        width: 130px !important;
     }
     .dropdown-content {
         top: 70px;
@@ -65,9 +82,11 @@
         justify-content: center;
     }
     .container {
-        padding: 10px;
-        max-width: 400px;
-        width: 90%;
+        width: 95% !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch; 
     }
 }
 @font-face {
@@ -95,6 +114,9 @@ body {
 h2 {
     font-size: 2.2rem;
     text-align: center;
+}
+.bold {
+    font-weight: bolder;
 }
 .navbar {
     display: flex;
@@ -256,7 +278,6 @@ h2 {
     cursor: pointer;
 }
 .ficha-tecnica {
-    justify-self: end;
     max-width: 400px;
     border-radius: 6px;
 }
@@ -304,19 +325,28 @@ abbr:hover {
     padding: 0;
     margin-bottom: 10px;
 }
+.ficha-tecnica li, .trucos li {
+    list-style: none;
+}
 .container {
+    display: flex;
+    flex-direction: column;
     margin: 90px auto;
     padding: 15px;
     max-width: 1200px;
     width: 90%;
     border-radius: 15px;
 }
+#container {
+    flex-direction: row;
+}
+.text-container {
+    margin-left: 30px;
+    margin-right: 40px;
+}
 .boton {
     width: 30px;
     height: 25px;
-}
-li {
-    list-style: none;
 }
 .radio-titulo {
     font-size: 2.5rem;
