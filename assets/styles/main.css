@@ -56,24 +56,35 @@
     }
     .ficha-tecnica {
         max-height: 900px !important;
-        max-width: 90px !important;
+        max-width: 200px !important;
+        margin: 10px;
     }
     .ficha-tecnica li, .ficha.tecnica th {
         font-size: 0.8rem !important;
     }
+    .ficha-tecnica ul {
+        margin: 0;
+    }
     .ficha-tecnica td, .ficha-tecnica th {
         border-top: 1px transparent !important;
+        overflow: hidden;
     }
     .ficha-tecnica th, .tabla td {
-        max-width: 80px !important;
+        max-width: 120px !important;
+        overflow: hidden;
     }
     .ficha-tecnica .portada img {
         width: 90px !important;
         height: 120px !important;
-        margin: 0 !important;
+        position: relative;
+        right: 20px;
     }
     .ficha-tecnica table {
         width: 130px !important;
+    }
+    .ficha-tecnica .titulo {
+        font-size: 15px !important;
+        overflow: hidden;
     }
     .dropdown-content {
         top: 120px !important;
@@ -92,6 +103,7 @@
     .container {
         width: 100% !important;
         display: flex;
+        padding: 0 !important;
         flex-direction: column;
         justify-content: flex-start;
         align-items: stretch; 
