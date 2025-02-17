@@ -1,5 +1,6 @@
 @media screen and (max-width: 425px) {
     body {
+        margin-top: 140px !important;
         width: 400px;
     }
     .text-container h2 {
@@ -38,7 +39,7 @@
         height: 40px !important;
     }
     .navbar {
-        margin-right: 3px;
+        margin-right: 9px;
     }
     .hamburger {
         align-items: center !important;
@@ -75,17 +76,16 @@
         width: 130px !important;
     }
     .dropdown-content {
-        top: 70px;
+        top: 120px !important;
         flex-wrap: wrap;
         padding: 5px;
     }
     .dropdown-content img {
-        height: 20px;
-        width: 35px;
-        transform: scale(0.7);
+        transform: scale(1.0) !important;
     }
     .dropdown-content a {
         width: 60px;
+        height: 40px;
         display: flex;
         justify-content: center;
     }
