@@ -87,6 +87,15 @@ abbr {
 .radio-container img:hover {
     background-image: linear-gradient( #f77edcfd, #00000075);
 }
+.radio-container img:nth-child(9) {
+    margin-left: 150px;
+}
+.radio-container img:nth-child(11) {
+    margin-left: 150px;
+}
+.radio-container img:nth-child(13) {
+    margin-left: 150px;
+}
 footer {
     background: linear-gradient(180deg, #ee62d0fd, #f0bae4);
 }

@@ -99,6 +99,15 @@ abbr {
 .radio-container img:hover {
     background-image: linear-gradient( #fffffffd, #00000075);
 }
+.radio-container img:nth-child(33) {
+    margin-left: 150px;
+}
+.radio-container img:nth-child(35) {
+    margin-left: 150px;
+}
+.radio-container img:nth-child(37) {
+    margin-left: 150px;
+}
 footer {
     background: linear-gradient(#fefefffd, #31292fe8);
 }

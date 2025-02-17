@@ -24,6 +24,9 @@ h2, h3 {
 .trucos ul {
     background-color: #6166ac11;
 }
+#pc span {
+    border-color: #373af7;
+}
 .header {
     background-image: linear-gradient(45deg, #212642, #6a838f);
 }
@@ -91,6 +94,15 @@ abbr {
 }
 .radio-container img:hover {
     background-image: linear-gradient( #3740b9fd, #00000075);
+}
+.radio-container img:nth-child(9) {
+    margin-left: 150px;
+}
+.radio-container img:nth-child(11) {
+    margin-left: 150px;
+}
+.radio-container img:nth-child(13) {
+    margin-left: 150px;
 }
 footer {
     background: #0a1f25cc;
