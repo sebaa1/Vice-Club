@@ -14,13 +14,12 @@
         margin: 0 !important;
     }
     .header {
-        height: 60px !important;
+        height: 120px !important;
         border-bottom: 2px solid #000000;
     }
     .header a, .header h1 {
-        font-size: 30px;
+        font-size: 2.5rem;
         margin: 0 !important;
-        height: 40px
     }
     .header img {
         width: 50px;
@@ -44,6 +43,9 @@
         height: 40px !important;
         margin: 0 !important;
     }
+    .menu-content a {
+        font-size: 1.3rem
+    }
     .ficha-tecnica {
         max-height: 900px !important;
         max-width: 90px !important;
@@ -56,7 +58,6 @@
     }
     .ficha-tecnica th, .tabla td {
         max-width: 80px !important;
-        font-size: 0.7rem !important;
     }
     .ficha-tecnica .portada img {
         width: 90px !important;
@@ -110,6 +111,9 @@ body::before {
 }
 body {
     margin-top: 80px;
+}
+h1 {
+    margin-bottom: 0;
 }
 h2 {
     font-size: 2.2rem;
