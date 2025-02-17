@@ -37,11 +37,18 @@
         height: 40px !important;
         height: 40px !important;
     }
+    .navbar {
+        margin-right: 3px;
+    }
     .hamburger {
         align-items: center !important;
         width: 40px !important;
         height: 40px !important;
         margin: 0 !important;
+        padding: 1px
+    }
+    .line {
+        margin-left: 2px !important
     }
     .menu-content a {
         font-size: 1.3rem
@@ -83,7 +90,7 @@
         justify-content: center;
     }
     .container {
-        width: 95% !important;
+        width: 100% !important;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
