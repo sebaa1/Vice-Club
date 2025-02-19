@@ -22,8 +22,9 @@ h2, h3 {
     background-color: #a138e78f;
 }
 #pc span {
-    border-color: #ffffff;
-    color:#ffffff
+    border-color: #24232373;
+    color:#18e1f0;
+    background-color: #1110103b;
 }
 .header {
     background-image: linear-gradient(45deg, #dc6ec4, #8749b4);

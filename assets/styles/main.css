@@ -1,17 +1,17 @@
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 720px) {
     body {
         margin-top: 140px !important;
-        width: 400px;
+        width: 700px;
     }
     .text-container h2 {
-        font-size: 17px;
+        font-size: 35px !important;
     }
     .text-container p, .text-container ul{
-        font-size: 14px;
+        font-size: 24px;
     }
     .text-container {
         flex: 1;
-        padding: 15px;
+        padding: 30px;
         margin: 0 !important;
     }
     .header {
@@ -19,40 +19,42 @@
         border-bottom: 2px solid #000000;
     }
     .header a, .header h1 {
-        font-size: 2.5rem;
+        font-size: 3.4rem;
         margin: 0 !important;
     }
     .header img {
-        width: 50px;
-        height: 50px;
+        width: 120px;
+        height: 120px;
     }
     .header .hamburger{
-        width: 10px;
-        height: 20px;
+        width: 60px !important;
+        height: 50px !important;
     }
     .dropdown-content {
-        height: 80px;
-        top: 12% !important
+        height: 140px;
+        top: 12% !important;
+        gap: 25px !important;
     }
     .dropdown-content img {
-        height: 40px !important;
-        height: 40px !important;
+        height: 70px !important;
+        height: 70px !important;
     }
     .navbar {
-        margin-right: 9px;
+        margin-right: 12px;
     }
     .hamburger {
         align-items: center !important;
         width: 40px !important;
         height: 40px !important;
         margin: 0 !important;
-        padding: 1px
+        padding: 5px !important;
     }
     .line {
-        margin-left: 2px !important
+        width: 35px !important;
+        height: 4px !important;
     }
     .menu-content a {
-        font-size: 1.3rem
+        font-size: 1.5rem
     }
     .ficha-tecnica {
         max-height: 900px !important;
@@ -108,13 +110,36 @@
         justify-content: flex-start;
         align-items: stretch; 
     }
+    .radio-container {
+        width: 100% !important;
+        height: 700px !important;
+        gap: 30px !important;
+        grid-template-columns: repeat(4, 150px) !important;
+    }
+    footer {
+        height: 150px !important;
+    }
+    footer p {
+        font-size: 26px !important;
+    }
+    #playingImage {
+        width: 100px !important;
+        height: 100px !important;
+    }
+    #progressBarContainer {
+        height: 10px !important;
+        margin: 0 20px
+    }
+    #timeCurrent {
+        font-size: 26px;
+    }
 }
 @font-face {
     font-family: "Guanine";
     src: url("../fonts/Guanine.otf");
 }
 * {
-    font-family: "Noto Sans";
+    font-family: "Tahoma";
 }
 body::before {
     content: "";
@@ -130,9 +155,6 @@ body::before {
 }
 body {
     margin-top: 80px;
-}
-h1 {
-    margin-bottom: 0;
 }
 h2 {
     font-size: 2.2rem;
@@ -262,7 +284,7 @@ h2 {
 }
 .trucos ul {
     border-radius: 20px;
-    width: 800px;
+    max-width: 800px;
 }
 .trucos li:first-child {
     padding-top: 20px;
@@ -281,6 +303,8 @@ h2 {
     border: 2px solid;
     padding: 0 20px;
     margin-right: 10px;
+    border-radius: 20px;
+    border-width: 3px;
 }
 .menu {
     border-radius: 15px;
