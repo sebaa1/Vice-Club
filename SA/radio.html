@@ -50,59 +50,34 @@
                 <div class="menu-content" id="menuContent">
                     <ul>
                         <li> <a href="inicio.html">Inicio 🏠</a></li>
+                        <li> <a href="herramientas_y_mods.html">Herramientas y Mods 🛠️</a></li>
+                        <li> <a href="mapa.html">Mapa 🗺️</a></li>
+                        <li> <a href="radio.html" class="active">Radio 📻</a></li>
                         <li> <a href="trucos.html">Trucos 🎲</a></li>
-                        <li> <a href="radio.html"  class="active">Radio 📻</a></li>
                     </ul>
                 </div>
             </nav>
         </header>
-        <h2 class="radio-titulo">Radios de GTA SA</h2>
-        <div class="radio-container">
-
-        <img src="../assets/images/playback.webp" class="portada" alt="Playback FM">
-        <audio src="https://viceclub.s3.us-east-1.amazonaws.com/SA/Playback+FM.mp3" class="song"></audio>
-
-        <img src="../assets/images/k-rose.webp" class="portada" alt="K-Rose">
-        <audio src="https://viceclub.s3.us-east-1.amazonaws.com/SA/K-Rose.mp3" class="song"></audio>
-
-        <img src="../assets/images/k-dst.webp" class="portada" alt="K-DST">
-        <audio src="https://viceclub.s3.us-east-1.amazonaws.com/SA/K-DST.mp3" class="song"></audio>
-
-        <img src="../assets/images/bounce.webp" class="portada" alt="Bounce FM">
-        <audio src="https://viceclub.s3.us-east-1.amazonaws.com/SA/Bounce+FM.mp3" class="song"></audio>
-
-        <img src="../assets/images/sfur.webp" class="portada" alt="SF-UR">
-        <audio src="https://viceclub.s3.us-east-1.amazonaws.com/SA/SF-UR.mp3" class="song"></audio>
-
-        <img src="../assets/images/rls.webp" class="portada" alt="Radio Los Santos">
-        <audio src="https://viceclub.s3.us-east-1.amazonaws.com/SA/Radio+Los+Santos.mp3" class="song"></audio>
-
-        <img src="../assets/images/radio_x.webp" class="portada" alt="Radio X">
-        <audio src="https://viceclub.s3.us-east-1.amazonaws.com/SA/Radio+X.mp3" class="song"></audio>
-
-        <img src="../assets/images/csr.webp" class="portada" alt="CSR 103.9">
-        <audio src="https://viceclub.s3.us-east-1.amazonaws.com/SA/CSR+103.9.mp3" class="song"></audio>
-
-        <img src="../assets/images/k-jah_w.webp" class="portada" alt="K-JAH West">
-        <audio src="https://viceclub.s3.us-east-1.amazonaws.com/SA/K-JAH+West.mp3"class="song"></audio>
-
-        <img src="../assets/images/master.webp" class="portada" alt="Master Sounds 98.3">
-        <audio src="https://viceclub.s3.us-east-1.amazonaws.com/SA/Master+Sounds+98.3.mp3" class="song"></audio>
-
-        </div>
-        <footer id="nowPlaying" class="hidden">
-            <div class="footer-content">
-                <img id="playingImage" src="" alt="Radio en reproducción">
-                <p id="playingTitle">Reproduciendo:</p>
-                <div id="progressBarContainer">
-                    <div id="progressBar"></div>
-                    <div id="progressThumb"></div>
+        <h2 id="radio-title"></h2>
+    <div class="radio-container" id="radio-container"></div>
+    <footer id="nowPlaying" class="hidden">
+        <div class="footer-content">
+            <img id="playingImage" src="" alt="Radio en reproducción">
+            <div class="track-info">
+                <p id="playingTitle"></p>
+                <p id="currentTrack"></p>
+            </div>
+            <div id="progressBarContainer">
+                <div id="progressBar"></div>
+                <div id="progressThumb"></div>
             </div>
             <span id="timeCurrent">0:00</span>
-        </footer>
+        </div>
+    </footer>
         <script src="../assets/scripts/abrir menu.js"></script>
         <script src="../assets/scripts/header.js"></script>
-        <script src="../assets/scripts/radio.js"></script>
+        <script src="../assets/scripts/radioData.js"></script>
+        <script src="../assets/scripts/radioPlayer.js" data-game="gta-sa"></script>
     </div>
 </body>
 </html>

@@ -185,6 +185,9 @@ h2 {
     display: block;
     height: 70px;
 }
+.header-img:hover {
+    cursor: pointer
+}
 .header-container {
     display: flex;
     align-items: center;
@@ -500,4 +503,60 @@ footer.hidden {
     flex: 1;
     text-align: left;
     margin: 6px
+}
+#currentTrackWrapper {
+    width: 230px; /* Ancho fijo del contenedor */
+    overflow: hidden; /* Recorta el texto que excede el contenedor */
+    position: relative; /* Para posicionamiento relativo */
+}
+
+#currentTrack {
+    display: inline-block; /* Necesario para la transformación */
+    white-space: nowrap; /* Evita que el texto se divida en líneas */
+    position: relative; /* Para que se mueva dentro del contenedor */
+    /* Quitamos overflow: hidden y max-width: 100% */
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.track-info {
+    display: flex;
+    flex-direction: column;
+}
+
+#currentTrack {
+    margin: 0;
+    font-size: 14px;
+}
+#map {
+    height: 100vh;
+    width: 100vh;
+    overflow: hidden;
+    z-index: 0;
+}
+.leaflet-container {
+    background-color: #0a0a6844 !important;
+    border: 3px solid #111;
+}
+.reference-box {
+    background-color: #5989f0; /* Fondo blanco */
+    padding: 10px;           /* Espaciado interno */
+    border: 2px solid;
+    border-radius: 5px;      /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Sombra */
+    font-family: Arial, sans-serif; /* Fuente */
+    font-size: 14px;         /* Tamaño de fuente */
+    color: #333;             /* Color del texto */
+}
+.reference-box h4 {
+    margin-top: 0;           /* Sin margen superior */
+    font-size: 16px;         /* Tamaño de fuente del título */
+    color: #05284e;          /* Color del título */
+}
+.reference-box p {
+    margin: 5px 0;           /* Margen entre párrafos */
 }

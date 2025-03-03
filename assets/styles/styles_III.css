@@ -24,6 +24,10 @@ h2, h3 {
 .trucos ul {
     background-color: #6166ac11;
 }
+.plataforma.selected {
+    border: 5px solid #373af7;
+    transform: 1s border ease;
+}
 #pc span {
     border-color: #373af7;
 }

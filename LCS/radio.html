@@ -50,74 +50,34 @@
                 <div class="menu-content" id="menuContent">
                     <ul>
                         <li> <a href="inicio.html">Inicio 🏠</a></li>
+                        <li> <a href="herramientas_y_mods.html">Herramientas y Mods 🛠️</a></li>
+                        <li> <a href="mapa.html">Mapa 🗺️</a></li>
+                        <li> <a href="radio.html" class="active">Radio 📻</a></li>
                         <li> <a href="trucos.html">Trucos 🎲</a></li>
-                        <li> <a href="radio.html"  class="active">Radio 📻</a></li>
                     </ul>
                 </div>
             </nav>
         </header>
-        <h2 class="radio-titulo" style="color: #ffffff">Radios de GTA LCS</h2>
-        <div class="radio-container">
-
-            <img src="../assets/images/head_lcs.webp" class="portada" alt="Head Radio">
-            <audio class="song">
-                <source src="https://viceclub.s3.us-east-1.amazonaws.com/LCS/Head+Radio.mp3" type="audio/mp3">
-            </audio>
-
-            <img src="../assets/images/clef_lcs.webp" class="portada" alt="Double Clef FM">
-            <audio class="song">
-                <source src="https://viceclub.s3.us-east-1.amazonaws.com/LCS/Double+Clef+FM.mp3" type="audio/mp3">
-            </audio>
-
-            <img src="../assets/images/k-jah_lcs.webp" class="portada" alt="K-JAH Radio">
-            <audio class="song">
-                <source src="https://viceclub.s3.us-east-1.amazonaws.com/LCS/K-JAH+Radio.mp3" type="audio/mp3">
-            </audio>
-
-            <img src="../assets/images/rise.webp" class="portada" alt="Rise FM">
-            <audio class="song">
-                <source src="https://viceclub.s3.us-east-1.amazonaws.com/LCS/Rise+FM.mp3" type="audio/mp3">
-            </audio>
-
-            <img src="../assets/images/lips.webp" class="portada" alt="Lips 106">
-            <audio class="song">
-                <source src="https://viceclub.s3.us-east-1.amazonaws.com/LCS/Lips+106.mp3" type="audio/mp3">
-            </audio>
-
-            <img src="../assets/images/rdm.webp"class="portada" alt="Radio del Mundo">
-            <audio class="song">
-                <source src="https://viceclub.s3.us-east-1.amazonaws.com/LCS/Radio+Del+Mundo.mp3" type="audio/mp3">
-            </audio>
-
-            <img src="../assets/images/msx98.webp" class="portada" alt="MSX 98">
-            <audio class="song">
-                <source src="https://viceclub.s3.us-east-1.amazonaws.com/LCS/MSX+98.mp3" type="audio/mp3">
-            </audio>
-
-            <img src="../assets/images/flashback_lcs.webp" class="portada" alt="Flashback FM">
-            <audio class="song">
-                <source src="https://viceclub.s3.us-east-1.amazonaws.com/LCS/Flashback+FM.mp3" type="audio/mp3">
-            </audio>
-
-            <img src="../assets/images/tlj.webp" class="portada" alt="The Liberty Jam">
-            <audio class="song">
-                <source src="https://viceclub.s3.us-east-1.amazonaws.com/LCS/The+Liberty+Jam.mp3" type="audio/mp3">
-            </audio>
-
-        </div>
-        <footer id="nowPlaying" class="hidden">
-            <div class="footer-content">
-                <img id="playingImage" src="" alt="Radio en reproducción">
-                <p id="playingTitle">Reproduciendo:</p>
-                <div id="progressBarContainer">
-                    <div id="progressBar"></div>
-                    <div id="progressThumb"></div>
+        <h2 id="radio-title"></h2>
+    <div class="radio-container" id="radio-container"></div>
+    <footer id="nowPlaying" class="hidden">
+        <div class="footer-content">
+            <img id="playingImage" src="" alt="Radio en reproducción">
+            <div class="track-info">
+                <p id="playingTitle"></p>
+                <p id="currentTrack"></p>
+            </div>
+            <div id="progressBarContainer">
+                <div id="progressBar"></div>
+                <div id="progressThumb"></div>
             </div>
             <span id="timeCurrent">0:00</span>
-        </footer>
+        </div>
+    </footer>
         <script src="../assets/scripts/abrir menu.js"></script>
         <script src="../assets/scripts/header.js"></script>
-        <script src="../assets/scripts/radio.js"></script>
+        <script src="../assets/scripts/radioData.js"></script>
+        <script src="../assets/scripts/radioPlayer.js" data-game="gta-lcs"></script>
     </div>
 </body>
 </html>

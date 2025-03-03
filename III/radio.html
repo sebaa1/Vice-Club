@@ -17,28 +17,28 @@
                 <img src="../assets/images/header.webp" alt="header" class="header-img" id="logo-container">
                 <div class="dropdown-content" id="dropdown-content">
                     <a href="../III/inicio.html">
-                        <img src="../assets/images/III.webp" class="logo-active">
+                        <img src="../assets/images/III.webp" class="logo-active" loading="lazy">
                     </a> 
                     <a href="../VC/radio.html">
-                        <img src="../assets/images/VC.webp" class="logo">
+                        <img src="../assets/images/VC.webp" class="logo" loading="lazy">
                     </a>
                     <a href="../SA/radio.html">
-                        <img src="../assets/images/SA.webp" class="logo">
+                        <img src="../assets/images/SA.webp" class="logo" loading="lazy">
                     </a>
                     <a href="../LCS/radio.html">
-                        <img src="../assets/images/LCS.webp" class="logo">
+                        <img src="../assets/images/LCS.webp" class="logo" loading="lazy">
                     </a>
                     <a href="../VCS/radio.html">
-                        <img src="../assets/images/VCS.webp" class="logo">
+                        <img src="../assets/images/VCS.webp" class="logo" loading="lazy">
                     </a>
                     <a href="../IV/radio.html">
-                        <img src="../assets/images/IV.webp" class="logo">
+                        <img src="../assets/images/IV.webp" class="logo" loading="lazy">
                     </a>
                     <a href="../V/radio.html">
-                        <img src="../assets/images/V.webp" class="logo">
+                        <img src="../assets/images/V.webp" class="logo" loading="lazy">
                     </a>
                     <a href="../VI/inicio.html">
-                        <img src="../assets/images/VI.webp" class="logo">
+                        <img src="../assets/images/VI.webp" class="logo" loading="lazy">
                     </a>
                 </div>
             </div>
@@ -52,64 +52,36 @@
                 <div class="menu-content" id="menuContent">
                     <ul>
                         <li> <a href="inicio.html">Inicio 🏠</a></li>
+                        <li> <a href="herramientas_y_mods.html">Herramientas y Mods 🛠️</a></li>
+                        <li> <a href="mapa.html">Mapa 🗺️</a></li>
+                        <li> <a href="radio.html" class="active">Radio 📻</a></li>
                         <li> <a href="trucos.html">Trucos 🎲</a></li>
-                        <li> <a href="radio.html"  class="active">Radio 📻</a></li>
                     </ul>
                 </div>
             </nav>
         </header>
-        <h2 class="radio-titulo">Radios de GTA III</h2>
-        <div class="radio-container">
-
-            <img src="../assets/images/headradio.webp" class="portada" alt="Head Radio">
-            <audio class="song">
-                <source src="https://viceclub.s3.us-east-1.amazonaws.com/III/Head+Radio.mp3" type="audio/mp3">
-            </audio>
-
-            <img src="../assets/images/doublecleff.webp" class="portada" alt="Double Clef FM">
-            <audio class="song">
-                <source src="https://viceclub.s3.us-east-1.amazonaws.com/III/Double+Clef+FM.mp3" type="audio/mp3">
-            </audio>
-
-            <img src="../assets/images/k-jah.webp" class="portada" alt="K-JAH Radio">
-            <audio class="song">
-                <source src="https://viceclub.s3.us-east-1.amazonaws.com/III/K-JAH+Radio.mp3" type="audio/mp3">
-            </audio>
-
-            <img src="../assets/images/lips.webp" class="portada" alt="Lips 106">
-            <audio class="song">
-                <source src="https://viceclub.s3.us-east-1.amazonaws.com/III/Lips+106.mp3" type="audio/mp3">
-            </audio>
-
-            <img src="../assets/images/game fm.webp" class="portada" alt="Game Radio FM">
-            <audio class="song">
-                <source src="https://viceclub.s3.us-east-1.amazonaws.com/III/Game+Radio+FM.mp3" type="audio/mp3">
-            </audio>
-
-            <img src="../assets/images/msx.webp" class="portada" alt="MSX FM">
-            <audio class="song">
-                <source src="https://viceclub.s3.us-east-1.amazonaws.com/III/MSX+FM.mp3" type="audio/mp3">
-            </audio>
-
-            <img src="../assets/images/flashback.webp" class="portada" alt="Flashback FM">
-            <audio class="song">
-                <source src="https://viceclub.s3.us-east-1.amazonaws.com/III/Flashback+FM.mp3" type="audio/mp3">
-            </audio>
-
-        </div>
-        <footer id="nowPlaying" class="hidden">
-            <div class="footer-content">
-                <img id="playingImage" src="" alt="Radio en reproducción">
-                <p id="playingTitle">Reproduciendo:</p>
-                <div id="progressBarContainer">
-                    <div id="progressBar"></div>
-                    <div id="progressThumb"></div>
+        <h2 id="radio-title"></h2>
+    <div class="radio-container" id="radio-container"></div>
+    <footer id="nowPlaying" class="hidden">
+        <div class="footer-content">
+            <img id="playingImage" src="" alt="Radio en reproducción">
+            <div class="track-info">
+                <p id="playingTitle"></p>
+                <div id="currentTrackWrapper">
+                    <p id="currentTrack"></p>
+                </div>
+            </div>
+            <div id="progressBarContainer">
+                <div id="progressBar"></div>
+                <div id="progressThumb"></div>
             </div>
             <span id="timeCurrent">0:00</span>
-        </footer>
+        </div>
+    </footer>
         <script src="../assets/scripts/abrir menu.js"></script>
         <script src="../assets/scripts/header.js"></script>
-        <script src="../assets/scripts/radio.js"></script>
+        <script src="../assets/scripts/radioData.js"></script>
+        <script src="../assets/scripts/radioPlayer.js" data-game="gta-iii"></script>
     </div>
 </body>
 </html>

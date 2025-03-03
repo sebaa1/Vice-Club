@@ -50,130 +50,35 @@
                 <div class="menu-content" id="menuContent">
                     <ul>
                         <li> <a href="inicio.html">Inicio 🏠</a></li>
+                        <li> <a href="herramientas_y_mods.html">Herramientas y Mods 🛠️</a></li>
+                        <li> <a href="mapa.html">Mapa 🗺️</a></li>
+                        <li> <a href="radio.html" class="active">Radio 📻</a></li>
                         <li> <a href="trucos.html">Trucos 🎲</a></li>
-                        <li> <a href="radio.html"  class="active">Radio 📻</a></li>
                     </ul>
                 </div>
             </nav>
         </header>
-        <h2 class="radio-titulo">Radios de GTA V</h2>
-        <div class="radio-container">
-
-            <img src="" class="portada" alt="Radio Los Santos">
-            <audio class="song">
-                <source src="" type="audio/mp3">
-            </audio>
-
-            <img src="" class="portada" alt="Space 103.2">
-            <audio class="song">
-                <source src="" type="audio/mp3">
-            </audio>
-
-            <img src="" class="portada" alt="West Coast Classics">
-            <audio class="song">
-                <source src="" type="audio/mp3">
-            </audio>
-
-            <img src="" class="portada" alt="Rebel Radio">
-            <audio class="song">
-                <source src="" type="audio/mp3">
-            </audio>
-
-            <img src="" class="portada" alt="Los Santos Rock Radio">
-            <audio class="song">
-                <source src="" type="audio/mp3">
-            </audio>
-
-            <img src="" class="portada" alt="The Lowdown 91.1">
-            <audio class="song">
-                <source src="" type="audio/mp3">
-            </audio>
-
-            <img src="" class="portada" alt="The Blue Ark">
-            <audio class="song">
-                <source src="" type="audio/mp3">
-            </audio>
-            
-            <img src="" class="portada" alt="Non-Stop-Pop FM">
-            <audio class="song">
-                <source src="" type="audio/mp3">
-            </audio>
-
-            <img src="" class="portada" alt="East Los FM">
-            <audio class="song">
-                <source src="" type="audio/mp3">
-            </audio>
-
-            <img src="" class="portada" alt="WorldWide FM">
-            <audio class="song">
-                <source src="" type="audio/mp3">
-            </audio>
-
-            <img src="" class="portada" alt="Channel X">
-            <audio class="song">
-                <source src="" type="audio/mp3">
-            </audio>
-
-            <img src="" class="portada" alt="Radio Mirror Park">
-            <audio class="song">
-                <source src="" type="audio/mp3">
-            </audio>
-
-            <img src="" class="portada" alt="Vinewood Boulevard Radio">
-            <audio class="song">
-                <source src="" type="audio/mp3">
-            </audio>
-
-            <img src="" class="portada" alt="Soulwax FM">
-            <audio class="song">
-                <source src="" type="audio/mp3">
-            </audio>
-
-            <img src="" class="portada" alt="FlyLo FM">
-            <audio class="song">
-                <source src="" type="audio/mp3">
-            </audio>
-
-            <img src="" class="portada" alt="The Lab">
-            <audio class="song">
-                <source src="" type="audio/mp3">
-            </audio>
-
-            <img src="" class="portada" alt="blonded Los Santos 97.8 FM">
-            <audio class="song">
-                <source src="" type="audio/mp3">
-            </audio>
-
-            <img src="" class="portada" alt="Los Santos Underground Radio">
-            <audio class="song">
-                <source src="" type="audio/mp3">
-            </audio>
-
-            <img src="" class="portada" alt="iFruit Radio">
-            <audio class="song">
-                <source src="" type="audio/mp3">
-            </audio>
-            
-            <img src="" class="portada" alt="Reproductor">
-            <audio class="song">
-                <source src="" type="audio/mp3">
-            </audio>
-
-        </div>
-
-        <footer id="nowPlaying" class="hidden">
-            <div class="footer-content">
-                <img id="playingImage" src="" alt="Radio en reproducción">
-                <p id="playingTitle">Reproduciendo:</p>
-                <div id="progressBarContainer">
-                    <div id="progressBar"></div>
-                    <div id="progressThumb"></div>
+        <h2 id="radio-title"></h2>
+    <div class="radio-container" id="radio-container"></div>
+    <footer id="nowPlaying" class="hidden">
+        <div class="footer-content">
+            <img id="playingImage" src="" alt="Radio en reproducción">
+            <div class="track-info">
+                <p id="playingTitle"></p>
+                <p id="currentTrack"></p>
+            </div>
+            <div id="progressBarContainer">
+                <div id="progressBar"></div>
+                <div id="progressThumb"></div>
             </div>
             <span id="timeCurrent">0:00</span>
-        </footer>
+        </div>
+    </footer>
         <script src="../assets/scripts/abrir menu.js"></script>
         <script src="../assets/scripts/header.js"></script>
-        <script src="../assets/scripts/radio.js"></script>
+        <script src="../assets/scripts/radioData.js"></script>
+        <script src="../assets/scripts/radioPlayer.js" data-game="gta-v"></script>
+    </div>
     </div>
 </body>
 </html>

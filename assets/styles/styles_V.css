@@ -85,8 +85,8 @@ footer p {
     color: #ffffff;
 }
 #playingImage {
-    border: 3px solid #98f19f;
-    background-color: #ffffff;
+    border: 3px solid #000000;
+    background-color: #9af37f;
 }
 #progressBarContainer {
     background-color: #ffffff;

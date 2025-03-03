@@ -22,6 +22,14 @@ h2, h3 {
     background-color: #61b96644;
     width: 900px !important;
 }
+.plataforma.selected {
+    border: 5px solid #17be1f;
+}
+#pc span {
+    border-color: #24232373;
+    color:#000000;
+    background-color: #23d6133b;
+}
 .header {
     background-image: linear-gradient(177deg, #12ee84, #2d7114);
 }

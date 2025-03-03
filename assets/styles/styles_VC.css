@@ -18,6 +18,10 @@ h2, h3 {
     text-decoration: underline;
     text-shadow: 3px 3px 3px #040401;
 }
+.plataforma.selected {
+    border: 5px solid #7cd9f3;
+    transform: 1s border ease;
+}
 .trucos ul {
     background-color: #a138e78f;
 }
